@@ -1,0 +1,133 @@
+# Build command removed — static HTML deploys directly.
+# Restore when blog posts are ready:
+# [build]
+#   command = "pip install -r requirements.txt --quiet && python3 build.py"
+#   publish = "."
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/approach"
+  to = "/approach.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+[[redirects]]
+  from = "/faqs"
+  to = "/faqs.html"
+  status = 200
+
+[[redirects]]
+  from = "/insights"
+  to = "/insights.html"
+  status = 200
+
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+
+[[redirects]]
+  from = "/eky"
+  to = "/eky.html"
+  status = 200
+
+[[redirects]]
+  from = "/12-pillars-of-digital-marketing-health"
+  to = "/12-pillars-of-digital-marketing-health.html"
+  status = 200
+
+[[redirects]]
+  from = "/work"
+  to = "/work/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/work/powell-construction"
+  to = "/work/powell-construction.html"
+  status = 200
+
+[[redirects]]
+  from = "/work/the-timekeeper-atelier"
+  to = "/work/the-timekeeper-atelier.html"
+  status = 200
+
+[[redirects]]
+  from = "/work/rootedeq"
+  to = "/work/rootedeq.html"
+  status = 200
+
+[[redirects]]
+  from = "/work/trueb-berne-beard"
+  to = "/work/trueb-berne-beard.html"
+  status = 200
+
+[[redirects]]
+  from = "/work/counseling-forward"
+  to = "/work/counseling-forward.html"
+  status = 200
+
+[[redirects]]
+  from = "/work/white-raven-tours"
+  to = "/work/white-raven-tours.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions"
+  to = "/solutions/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/marketing-action-plan"
+  to = "/solutions/marketing-action-plan.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/brand-architecture"
+  to = "/solutions/brand-architecture.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/digital-ecosystem"
+  to = "/solutions/digital-ecosystem.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/marketing-operations"
+  to = "/solutions/marketing-operations.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/content-and-social"
+  to = "/solutions/content-and-social.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/prospecting-and-pipeline"
+  to = "/solutions/prospecting-and-pipeline.html"
+  status = 200
+
+[[redirects]]
+  from = "/solutions/digital-advertising"
+  to = "/solutions/digital-advertising.html"
+  status = 200
+
+[[redirects]]
+  from = "/insights/:slug"
+  to = "/insights/:slug.html"
+  status = 200

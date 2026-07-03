@@ -1,0 +1,69 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets/images
+public_folder: /assets/images
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: posts
+    label: Blog Posts
+    label_singular: Blog Post
+    folder: posts
+    create: true
+    slug: "{{slug}}"
+    preview_path: "insights/{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        hint: "The post headline. Write it like a bold claim, not a topic label."
+
+      - label: "Publish Date"
+        name: "publish_date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "Set this to a future date to schedule the post. It goes live on this date automatically."
+
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Strategy", value: "Strategy" }
+          - { label: "Systems", value: "Systems" }
+          - { label: "AI Integration", value: "AI" }
+          - { label: "Brand", value: "Brand" }
+          - { label: "Eastern Kentucky", value: "EKY" }
+          - { label: "Digital Advertising", value: "Advertising" }
+          - { label: "Case Study", value: "Case Study" }
+
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        hint: "2–3 sentences. This appears on the blog hub and in search results."
+
+      - label: "Featured Image"
+        name: "featured_image"
+        widget: "image"
+        required: false
+        hint: "Optional. Used as the post hero image."
+
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+        hint: "Write in LBD voice. No hedging. No soft openers. Lead with the claim."
+
+      - label: "SEO Title"
+        name: "seo_title"
+        widget: "string"
+        required: false
+        hint: "If blank, uses the post title. Keep under 60 characters."
+
+      - label: "SEO Description"
+        name: "seo_description"
+        widget: "text"
+        required: false
+        hint: "If blank, uses the excerpt. Keep under 155 characters."

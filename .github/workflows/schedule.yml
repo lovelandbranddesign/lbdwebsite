@@ -1,0 +1,18 @@
+name: Scheduled Blog Deploy
+
+on:
+  schedule:
+    # Runs at 8:00 AM UTC (4:00 AM ET) every day
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+    # Also allows manual trigger from GitHub Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Deploy
+        run: |
+          curl -s -X POST -d '{}' "${{ secrets.NETLIFY_DEPLOY_HOOK }}"
+        env:
+          NETLIFY_DEPLOY_HOOK: ${{ secrets.NETLIFY_DEPLOY_HOOK }}

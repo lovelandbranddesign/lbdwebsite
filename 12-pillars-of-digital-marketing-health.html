@@ -1,0 +1,1335 @@
+<!DOCTYPE html><html lang="en"><head><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9TJVTCR');</script>
+<!-- End Google Tag Manager --><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>12 Pillars Digital Marketing Audit | Loveland Brand Design</title><meta name="description" content="Answer 12 questions. Get an instant digital marketing maturity rating and a plain-English gap analysis powered by AI. Free tool from Loveland Brand Design."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"><script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script><style>
+:root {
+  --orange:#FD4F00; --orange-dark:#C93D00;
+  --charcoal:#2E2E2E; --charcoal-dk:#1C1C1C;
+  --beige:#F5F5F5; --mid-grey:#8A8A8A;
+  --teal:#053343; --teal-mid:#0A5568;
+  --teal-light:#0D7A8F; --teal-dark:#032530;
+  --gold:#D1A046; --gold-light:#E4BE7A;
+  --white:#FFFFFF; --black:#0A0A0A;
+  --font-display:'Barlow Condensed',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --nav-h:72px; --ticker-h:40px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);background:var(--charcoal);color:var(--beige);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 48px;}
+
+/* TICKER */
+.ticker{background:var(--orange);height:var(--ticker-h);overflow:hidden;display:flex;align-items:center;position:fixed;top:0;left:0;right:0;z-index:200;}
+.ticker-track{display:flex;white-space:nowrap;animation:tick 38s linear infinite;}
+.ticker-item{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--white);padding:0 40px;}
+.ticker-sep{color:rgba(255,255,255,.4);align-self:center;}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* NAV */
+nav{position:fixed;top:var(--ticker-h);left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;transition:background .3s,backdrop-filter .3s;}
+nav.scrolled{background:rgba(26,26,26,.97);backdrop-filter:blur(16px);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1280px;margin:0 auto;padding:0 48px;}
+.nav-logo-svg{display:flex;align-items:center;line-height:1;}
+.nav-logo-wordmark{font-family:var(--font-display);font-size:26px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--white);}
+.nav-logo-dot{color:var(--orange);}
+.nav-logo-sub{font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-left:8px;align-self:flex-end;padding-bottom:3px;}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none;}
+.nav-links a{font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,245,245,.65);transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--white);}
+.nav-phone{font-size:13px;color:var(--mid-grey);}
+.nav-cta{background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 22px;transition:background .2s;white-space:nowrap;}
+.nav-cta:hover{background:var(--orange-dark);}
+
+/* BUTTONS */
+.btn-primary{display:inline-block;background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px 40px;border:none;cursor:pointer;transition:background .2s,transform .15s;}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px);}
+.btn-ghost{display:inline-block;background:transparent;color:var(--beige);font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:15px 40px;border:1px solid rgba(245,245,245,.2);cursor:pointer;transition:border-color .2s,color .2s;}
+.btn-ghost:hover{border-color:var(--teal-light);color:var(--teal-light);}
+.btn-teal{display:inline-block;background:var(--teal-mid);color:var(--white);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px 40px;transition:background .2s;}
+.btn-teal:hover{background:var(--teal-light);}
+.btn-white{display:inline-block;background:var(--white);color:var(--charcoal);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px 40px;transition:background .2s;}
+.btn-white:hover{background:var(--beige);}
+
+/* EYEBROW */
+.eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px;}
+.eyebrow::before{content:'';display:block;width:24px;height:1px;flex-shrink:0;background:currentColor;}
+.ew-teal{color:var(--teal-light);} .ew-gold{color:var(--gold);} .ew-grey{color:var(--mid-grey);}
+.ew-white{color:rgba(255,255,255,.45);} .ew-orange{color:var(--orange);}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* PAGE HEADER */
+.page-header{padding:calc(var(--ticker-h) + var(--nav-h) + 80px) 0 80px;background:var(--charcoal-dk);border-bottom:1px solid rgba(245,245,245,.06);}
+.page-header.teal-dark{background:var(--teal-dark);}
+.page-header.teal{background:var(--teal);}
+.ph-max{max-width:820px;}
+.page-heading{font-family:var(--font-display);font-size:clamp(48px,5.5vw,82px);font-weight:900;text-transform:uppercase;line-height:.93;color:var(--beige);letter-spacing:-.01em;margin-bottom:28px;}
+.page-heading .ao{color:var(--orange);} .page-heading .at{color:var(--teal-light);} .page-heading .ag{color:var(--gold);}
+.page-sub{font-size:17px;line-height:1.65;color:rgba(245,245,245,.6);max-width:580px;margin-bottom:36px;}
+.page-actions{display:flex;gap:16px;flex-wrap:wrap;}
+
+/* SECTIONS */
+.s-dark{background:var(--charcoal);padding:96px 0;}
+.s-darker{background:var(--charcoal-dk);padding:96px 0;}
+.s-teal{background:var(--teal);padding:96px 0;}
+.s-teal-dark{background:var(--teal-dark);padding:96px 0;}
+.s-light{background:var(--beige);color:var(--charcoal);padding:96px 0;}
+.s-orange{background:var(--orange);padding:64px 0;}
+.s-top{padding-top:0;}
+
+/* TYPOGRAPHY */
+.section-heading{font-family:var(--font-display);font-size:clamp(36px,4vw,60px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.01em;margin-bottom:28px;color:var(--beige);}
+.section-heading.dark{color:var(--charcoal);}
+.section-heading .ao{color:var(--orange);} .section-heading .at{color:var(--teal-light);} .section-heading .ag{color:var(--gold);}
+.prose{font-size:16px;line-height:1.75;color:rgba(245,245,245,.65);max-width:640px;}
+.prose.dark{color:rgba(46,46,46,.72);}
+.prose p{margin-bottom:18px;}
+.prose p:last-child{margin-bottom:0;}
+.prose strong{color:var(--beige);font-weight:500;}
+.prose.dark strong{color:var(--charcoal);}
+
+/* GRID LAYOUTS */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.two-col.center{align-items:center;}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:56px;}
+.sidebar-left{display:grid;grid-template-columns:340px 1fr;gap:88px;align-items:start;}
+
+/* CARDS */
+.card{background:rgba(245,245,245,.04);padding:36px 28px;transition:background .2s;}
+.card:hover{background:rgba(245,245,245,.07);}
+.card.light{background:rgba(46,46,46,.05);}
+.card.light:hover{background:rgba(46,46,46,.09);}
+.card.bordered-o{border-top:3px solid var(--orange);}
+.card.bordered-t{border-top:3px solid var(--teal-light);}
+.card.bordered-g{border-top:3px solid var(--gold);}
+.card-num{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;color:var(--mid-grey);margin-bottom:14px;}
+.card-title{font-family:var(--font-display);font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:var(--beige);margin-bottom:10px;}
+.card-title.dark{color:var(--charcoal);}
+.card-body{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);}
+.card-body.dark{color:rgba(46,46,46,.6);}
+.card-link{display:inline-block;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-top:18px;transition:color .2s;}
+.card-link:hover{color:var(--orange-dark);}
+.card-link.teal{color:var(--teal-light);}
+
+/* FEATURE LIST */
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:24px;}
+.feature-list li{display:flex;align-items:flex-start;gap:14px;font-size:15px;line-height:1.5;color:rgba(245,245,245,.7);}
+.feature-list li.dark{color:rgba(46,46,46,.72);}
+.feature-list li::before{content:'→';color:var(--orange);font-family:var(--font-display);font-weight:700;flex-shrink:0;margin-top:2px;}
+.feature-list li.t::before{color:var(--teal-light);}
+.feature-list li.g::before{color:var(--gold);}
+
+/* SERVICE ROW */
+.service-row{display:grid;grid-template-columns:280px 1fr 160px;gap:48px;align-items:start;padding:44px 0;border-top:1px solid rgba(245,245,245,.07);}
+.service-row:last-child{border-bottom:1px solid rgba(245,245,245,.07);}
+.service-row.light{border-top-color:rgba(46,46,46,.1);}
+.service-row.light:last-child{border-bottom-color:rgba(46,46,46,.1);}
+.service-name{font-family:var(--font-display);font-size:20px;font-weight:900;text-transform:uppercase;color:var(--beige);margin-bottom:4px;}
+.service-name.dark{color:var(--charcoal);}
+.service-tag{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mid-grey);}
+.service-desc{font-size:14px;line-height:1.7;color:rgba(245,245,245,.55);}
+.service-desc.dark{color:rgba(46,46,46,.65);}
+
+/* MOVEMENT LIST */
+.movement-list{margin-top:48px;}
+.movement-item{display:grid;grid-template-columns:64px 1fr auto;gap:32px;align-items:center;padding:36px 0;border-top:1px solid rgba(245,245,245,.07);text-decoration:none;}
+.movement-item:last-child{border-bottom:1px solid rgba(245,245,245,.07);}
+.movement-item:hover .mi-name{color:var(--orange);}
+.movement-item:hover .mi-arrow{color:var(--orange);transform:translateX(4px);}
+.mi-num{font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--mid-grey);}
+.mi-name{font-family:var(--font-display);font-size:22px;font-weight:900;text-transform:uppercase;color:var(--beige);transition:color .2s;}
+.mi-desc{font-size:14px;line-height:1.55;color:rgba(245,245,245,.45);margin-top:6px;max-width:560px;}
+.mi-arrow{font-size:22px;color:var(--mid-grey);transition:color .2s,transform .2s;}
+
+/* FAQ */
+.faq-group-label{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-light);margin:56px 0 0;display:block;}
+.faq-group-label:first-child{margin-top:0;}
+.faq-list{margin-top:0;}
+.faq-item{border-top:1px solid rgba(245,245,245,.08);}
+.faq-item:last-child{border-bottom:1px solid rgba(245,245,245,.08);}
+.faq-q{font-family:var(--font-display);font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:var(--beige);padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;user-select:none;}
+.faq-q::after{content:'+';font-size:24px;font-weight:300;color:var(--teal-light);flex-shrink:0;transition:transform .25s;}
+.faq-item.open .faq-q::after{transform:rotate(45deg);}
+.faq-a{font-size:15px;line-height:1.75;color:rgba(245,245,245,.6);max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s;}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:28px;}
+.faq-a strong{color:var(--beige);}
+
+/* WORK GRID */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.work-card{background:rgba(245,245,245,.04);padding:44px 36px;border-top:3px solid transparent;transition:background .2s;}
+.work-card:hover{background:rgba(245,245,245,.07);}
+.work-card.ac-o{border-top-color:var(--orange);}
+.work-card.ac-t{border-top-color:var(--teal-light);}
+.work-card.ac-g{border-top-color:var(--gold);}
+.work-industry{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:12px;}
+.work-client{font-family:var(--font-display);font-size:24px;font-weight:900;text-transform:uppercase;color:var(--beige);margin-bottom:12px;}
+.work-desc{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);margin-bottom:20px;}
+.work-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
+.work-tag{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);border:1px solid rgba(245,245,245,.1);padding:5px 10px;}
+.work-status{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-light);}
+
+/* PLACEHOLDER */
+.placeholder-block{background:rgba(245,245,245,.03);border:1px dashed rgba(245,245,245,.12);padding:80px 40px;text-align:center;margin-top:48px;}
+.placeholder-label{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:12px;}
+.placeholder-text{font-size:15px;color:rgba(245,245,245,.3);}
+
+/* PILLAR GRID */
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.pillar-card{background:rgba(245,245,245,.04);padding:32px 28px;}
+.pillar-num{font-family:var(--font-display);font-size:40px;font-weight:900;line-height:1;color:var(--orange);margin-bottom:12px;}
+.pillar-num.t{color:var(--teal-light);} .pillar-num.g{color:var(--gold);}
+.pillar-title{font-family:var(--font-display);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--beige);margin-bottom:10px;}
+.pillar-body{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);}
+
+/* FORM */
+.form-card{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.09);padding:44px;}
+.form-heading{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--white);margin-bottom:5px;}
+.form-sub{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:28px;}
+.field{margin-bottom:16px;}
+.field label{display:block;font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:7px;}
+.field input,.field textarea,.field select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:var(--font-body);font-size:14px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;transition:border-color .2s;}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A8A8A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;cursor:pointer;}
+.field select option{background:#1C1C1C;color:var(--white);}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--teal-light);}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.22);}
+.field textarea{resize:vertical;min-height:100px;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-submit{width:100%;background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px;border:none;cursor:pointer;margin-top:6px;transition:background .2s;}
+.form-submit:hover{background:var(--orange-dark);}
+
+/* STAT BAR */
+.stat-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(245,245,245,.06);margin-top:64px;}
+.stat-item{background:var(--charcoal-dk);padding:32px 28px;}
+.stat-num{font-family:var(--font-display);font-size:52px;font-weight:900;line-height:1;color:var(--orange);margin-bottom:6px;}
+.stat-label{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mid-grey);}
+
+/* CTA BAND */
+.cta-band{background:var(--teal-dark);padding:80px 0;text-align:center;}
+.cta-band.orange{background:var(--orange);}
+.cta-band-heading{font-family:var(--font-display);font-size:clamp(28px,3vw,46px);font-weight:900;text-transform:uppercase;color:var(--white);margin-bottom:12px;}
+.cta-band-sub{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;}
+.cta-band-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+
+/* PULLQUOTE */
+.pullquote{border-left:3px solid var(--orange);padding-left:24px;margin:40px 0;}
+.pullquote-text{font-family:var(--font-display);font-size:clamp(22px,2.5vw,32px);font-weight:900;text-transform:uppercase;line-height:1.05;color:var(--beige);margin-bottom:12px;}
+.pullquote-attr{font-size:12px;color:var(--mid-grey);}
+
+/* APPROACH STEPS */
+.step-list{display:flex;flex-direction:column;gap:0;}
+.step{display:grid;grid-template-columns:64px 1fr;gap:32px;align-items:start;padding:40px 0;border-top:1px solid rgba(245,245,245,.07);}
+.step:last-child{border-bottom:1px solid rgba(245,245,245,.07);}
+.step-num{font-family:var(--font-display);font-size:40px;font-weight:900;line-height:1;color:var(--orange);}
+.step-name{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;color:var(--beige);margin-bottom:10px;}
+.step-desc{font-size:14px;line-height:1.7;color:rgba(245,245,245,.55);}
+
+/* AI BAR */
+.ai-bar{background:var(--teal);padding:22px 36px;display:flex;align-items:center;justify-content:space-between;margin-bottom:2px;}
+.ai-bar-eyebrow{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px;}
+.ai-bar-name{font-family:var(--font-display);font-size:20px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--white);}
+.ai-bar-right{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.35);}
+
+/* FOOTER */
+footer{background:var(--black);padding:80px 0 40px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;padding-bottom:56px;border-bottom:1px solid rgba(245,245,245,.07);margin-bottom:32px;}
+.footer-logo-svg{display:flex;align-items:baseline;gap:0;margin-bottom:18px;}
+.footer-logo-wordmark{font-family:var(--font-display);font-size:22px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--white);}
+.footer-logo-dot{color:var(--orange);}
+.footer-logo-sub{font-family:var(--font-display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-left:7px;}
+.footer-tagline{font-size:13px;line-height:1.65;color:rgba(245,245,245,.35);max-width:240px;margin-bottom:18px;}
+.footer-contact a{display:block;font-size:13px;color:rgba(245,245,245,.42);margin-bottom:5px;transition:color .2s;}
+.footer-contact a:hover{color:var(--teal-light);}
+.footer-col-label{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:20px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul a{font-size:13px;color:rgba(245,245,245,.38);transition:color .2s;}
+.footer-col ul a:hover{color:var(--white);}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;}
+.footer-copy{font-size:11px;color:rgba(245,245,245,.2);}
+.footer-values{list-style:none;display:flex;gap:20px;}
+.footer-values li{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,245,.14);}
+
+/* INSIGHT CARDS */
+.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.insight-card{background:rgba(245,245,245,.04);padding:36px 28px;transition:background .2s;}
+.insight-card:hover{background:rgba(245,245,245,.07);}
+.insight-cat{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;}
+.insight-title{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;color:var(--beige);margin-bottom:12px;line-height:1.1;}
+.insight-excerpt{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);margin-bottom:20px;}
+.insight-meta{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .container{padding:0 28px;}
+  .nav-inner{padding:0 28px;}
+  .two-col,.sidebar-left{grid-template-columns:1fr;gap:48px;}
+  .three-col{grid-template-columns:repeat(2,1fr);}
+  .four-col{grid-template-columns:repeat(2,1fr);}
+  .pillar-grid{grid-template-columns:repeat(2,1fr);}
+  .work-grid{grid-template-columns:repeat(2,1fr);}
+  .insight-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .stat-bar{grid-template-columns:repeat(2,1fr);}
+  .service-row{grid-template-columns:1fr;gap:16px;}
+  .movement-item{grid-template-columns:48px 1fr;} .mi-arrow{display:none;}
+  .field-row{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .nav-links,.nav-phone{display:none;}
+  .three-col,.four-col,.pillar-grid,.work-grid,.insight-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+  .stat-bar{grid-template-columns:1fr;}
+}
+
+.nav-dropdown { position: relative; }
+.nav-dropdown > a::after { content: ' ▾'; font-size: 9px; opacity: .5; }
+.nav-drop-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: -16px;
+  background: rgba(20,20,20,.98);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(245,245,245,.09);
+  min-width: 230px;
+  padding: 8px 0;
+  z-index: 300;
+}
+.nav-drop-menu.open { display: block; }
+.nav-drop-item {
+  display: block;
+  padding: 11px 20px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,.52);
+  transition: color .15s, background .15s;
+  white-space: nowrap;
+}
+.nav-drop-item:hover { color: var(--white); background: rgba(245,245,245,.04); }
+.nav-drop-item.accent { color: var(--orange); }
+.nav-drop-item.accent:hover { color: var(--orange-dark); }
+.nav-drop-divider { height: 1px; background: rgba(245,245,245,.07); margin: 6px 0; }
+.nav-drop-label {
+  display: block;
+  padding: 10px 20px 4px;
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,.25);
+}
+
+/* ── MOBILE NAV ── */
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;flex-shrink:0;}
+.nav-burger span{display:block;width:24px;height:2px;background:var(--white);transition:transform .3s,opacity .3s;}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-burger.open span:nth-child(2){opacity:0;}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media(max-width:768px){
+  .nav-burger{display:flex;}
+  .nav-cta{display:none;}
+  .nav-links{
+    display:none;position:fixed;
+    top:calc(var(--ticker-h) + var(--nav-h));
+    left:0;right:0;bottom:0;
+    background:rgba(14,14,14,.98);backdrop-filter:blur(16px);
+    flex-direction:column;gap:0;
+    padding:8px 0 40px;
+    border-top:1px solid rgba(245,245,245,.08);
+    z-index:99;overflow-y:auto;
+  }
+  .nav-links.open{display:flex;}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:14px 32px;font-size:14px;color:rgba(245,245,245,.8);}
+  .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.04);}
+  .nav-phone{display:none;}
+  .nav-dropdown>a::after{content:none;}
+  .nav-drop-menu{
+    position:static!important;display:block!important;
+    background:rgba(255,255,255,.03);
+    border:none;padding:0;min-width:unset;
+    backdrop-filter:none;
+  }
+  .nav-drop-item{padding:10px 32px 10px 48px;font-size:10px;color:rgba(245,245,245,.45);}
+  .nav-drop-label{padding:10px 32px 4px 48px;font-size:9px;}
+  .nav-drop-divider{margin:4px 32px;}
+}
+
+/* ── MOBILE LAYOUT ── */
+@media(max-width:768px){
+  .container{padding:0 20px;}
+  .nav-inner{padding:0 20px;}
+
+  /* Page headers */
+  .page-header{padding:calc(var(--ticker-h) + var(--nav-h) + 48px) 0 48px;}
+  .page-heading{font-size:clamp(38px,9vw,64px);}
+  .page-sub{font-size:15px;}
+
+  /* Sections */
+  .s-dark,.s-darker,.s-teal,.s-teal-dark,.s-light,.s-orange{padding:64px 0;}
+
+  /* Typography */
+  .section-heading{font-size:clamp(30px,8vw,48px);}
+  .prose{font-size:15px;}
+
+  /* Grids */
+  .two-col,.sidebar-left{grid-template-columns:1fr;gap:40px;}
+  .three-col,.four-col{grid-template-columns:1fr;}
+  .card-grid,.card-grid-2{grid-template-columns:1fr;}
+  .tier-grid{grid-template-columns:1fr;}
+  .pillar-grid{grid-template-columns:1fr 1fr;}
+  .work-grid{grid-template-columns:1fr;}
+  .insight-grid{grid-template-columns:1fr;}
+  .stat-bar{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+  .footer-values{flex-wrap:wrap;justify-content:center;gap:12px;}
+  .field-row{grid-template-columns:1fr;}
+
+  /* Steps */
+  .step{grid-template-columns:48px 1fr;gap:20px;}
+  .step-num{font-size:32px;}
+
+  /* Movement list */
+  .movement-item{grid-template-columns:40px 1fr;gap:20px;}
+  .mi-arrow{display:none;}
+  .mi-name{font-size:18px;}
+
+  /* Service rows */
+  .service-row{grid-template-columns:1fr;gap:12px;}
+
+  /* Work cards */
+  .work-card{padding:32px 24px;}
+
+  /* Form */
+  .form-card{padding:28px 20px;}
+
+  /* CTA band */
+  .cta-band{padding:56px 0;}
+  .cta-band-actions{flex-direction:column;align-items:center;}
+
+  /* Pullquote */
+  .pullquote-text{font-size:clamp(18px,5vw,26px);}
+
+  /* AI bar */
+  .ai-bar{flex-direction:column;gap:12px;align-items:flex-start;}
+
+  /* Hero homepage specific */
+  h1.hero-headline{font-size:clamp(44px,12vw,72px)!important;}
+  .hero-proof-bar{flex-direction:column;gap:12px;align-items:flex-start;}
+  .hero-badge-inline{font-size:11px;}
+
+  /* Stat bar */
+  .stat-num{font-size:40px;}
+
+  /* Page actions */
+  .page-actions{flex-direction:column;}
+  .page-actions a{text-align:center;}
+}
+
+@media(max-width:480px){
+  .pillar-grid{grid-template-columns:1fr;}
+  .stat-bar{grid-template-columns:1fr;}
+  .page-heading{font-size:clamp(34px,10vw,56px);}
+  h1.hero-headline{font-size:clamp(38px,12vw,60px)!important;}
+}
+
+/* ── MOBILE FIXES ── */
+@media(max-width:768px){
+  /* Force burger visible */
+  button.nav-burger{
+    display:flex!important;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    cursor:pointer;
+    padding:10px 8px;
+    background:none;
+    border:none;
+    min-width:44px;
+    min-height:44px;
+    z-index:200;
+  }
+  button.nav-burger span{
+    display:block!important;
+    width:24px;
+    height:2px;
+    background:#fff;
+    border-radius:2px;
+    transition:transform .3s,opacity .3s;
+  }
+  /* Nav always has bg on mobile so burger is visible */
+  nav{background:rgba(20,20,20,.97)!important;backdrop-filter:blur(16px);}
+
+  /* Tighter page header — reduce the dead space */
+  .page-header{
+    padding:calc(var(--ticker-h) + var(--nav-h) + 24px) 0 40px!important;
+  }
+}
+
+/* EKY-specific */
+.eky-hero{min-height:100vh;display:flex;align-items:center;position:relative;background:var(--charcoal-dk);overflow:hidden;padding:calc(var(--ticker-h) + var(--nav-h) + 80px) 0 100px;}
+.eky-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--teal) 0%,var(--charcoal-dk) 60%);opacity:.85;}
+.eky-hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(253,79,0,.12);border:1px solid rgba(253,79,0,.3);color:var(--orange);font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;padding:8px 16px;border-radius:2px;margin-bottom:32px;}
+.eky-hero-heading{font-family:var(--font-display);font-size:clamp(60px,8vw,110px);font-weight:900;text-transform:uppercase;line-height:.9;color:var(--white);margin-bottom:32px;}
+.eky-hero-heading .ho{color:var(--orange);}
+.eky-hero-heading .ht{color:var(--teal-light);}
+.eky-hero-sub{font-size:18px;line-height:1.7;color:rgba(245,245,245,.7);max-width:520px;margin-bottom:48px;}
+.eky-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:60px;}
+@media(max-width:768px){.eky-stats{grid-template-columns:repeat(2,1fr);}}
+.eky-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);padding:28px 24px;text-align:center;}
+.eky-stat-num{font-family:var(--font-display);font-size:clamp(40px,5vw,64px);font-weight:900;color:var(--orange);line-height:1;}
+.eky-stat-label{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,245,.45);margin-top:8px;}
+
+.eky-intro{background:var(--teal);padding:120px 0;}
+.eky-intro-heading{font-family:var(--font-display);font-size:clamp(36px,4.5vw,60px);font-weight:900;text-transform:uppercase;line-height:1.05;color:var(--white);max-width:700px;margin-bottom:28px;}
+.eky-intro-heading .ao{color:var(--orange);}
+.eky-intro-sub{font-size:18px;line-height:1.75;color:rgba(245,245,245,.7);max-width:640px;}
+
+.section-eyebrow{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;margin-bottom:20px;display:block;}
+.section-eyebrow.ew-orange{color:var(--orange);}
+.section-eyebrow.ew-teal{color:var(--teal-light);}
+.section-eyebrow.ew-gold{color:var(--gold);}
+
+.s-dark{background:var(--charcoal-dk);padding:120px 0;}
+.s-darker{background:#111;padding:120px 0;}
+.s-teal{background:var(--teal);padding:120px 0;}
+.s-mid{background:var(--charcoal);padding:120px 0;}
+
+.section-heading-lg{font-family:var(--font-display);font-size:clamp(40px,5vw,72px);font-weight:900;text-transform:uppercase;line-height:1;color:var(--white);margin-bottom:20px;}
+.section-sub{font-size:17px;line-height:1.75;color:rgba(245,245,245,.6);max-width:640px;margin-bottom:60px;}
+
+.gap-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:60px;}
+@media(max-width:768px){.gap-grid{grid-template-columns:1fr;}}
+.gap-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);padding:40px;position:relative;}
+.gap-num{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--orange);margin-bottom:16px;display:block;}
+.gap-card-h{font-family:var(--font-display);font-size:22px;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:12px;}
+.gap-card-p{font-size:15px;line-height:1.7;color:rgba(245,245,245,.55);}
+
+.research-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin:60px 0;}
+@media(max-width:768px){.research-stats{grid-template-columns:repeat(2,1fr);}}
+.research-stat{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.06);padding:32px 24px;text-align:center;}
+.research-stat-num{font-family:var(--font-display);font-size:clamp(36px,4vw,52px);font-weight:900;color:var(--gold);line-height:1;}
+.research-stat-label{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,245,.4);margin-top:8px;}
+
+.cluster-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:40px;}
+@media(max-width:900px){.cluster-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:600px){.cluster-grid{grid-template-columns:1fr;}}
+.cluster-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);padding:32px;}
+.cluster-tag{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:8px;display:block;}
+.cluster-name{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:4px;}
+.cluster-counties{font-family:var(--font-display);font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--teal-light);margin-bottom:14px;}
+.cluster-desc{font-size:13px;line-height:1.65;color:rgba(245,245,245,.5);}
+
+.phases-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:48px;}
+@media(max-width:768px){.phases-grid{grid-template-columns:1fr;}}
+.phase-card{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);padding:40px;position:relative;}
+.phase-card.apex{background:rgba(253,79,0,.06);border-color:rgba(253,79,0,.25);}
+.phase-num{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-light);margin-bottom:16px;display:block;}
+.phase-card.apex .phase-num{color:var(--orange);}
+.phase-h{font-family:var(--font-display);font-size:24px;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:12px;}
+.phase-p{font-size:15px;line-height:1.7;color:rgba(245,245,245,.55);}
+
+.soar-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:60px;}
+@media(max-width:768px){.soar-grid{grid-template-columns:1fr;}}
+.soar-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);padding:40px;}
+.soar-card-h{font-family:var(--font-display);font-size:22px;font-weight:800;text-transform:uppercase;color:var(--white);margin-bottom:12px;}
+.soar-card-p{font-size:15px;line-height:1.7;color:rgba(245,245,245,.55);}
+
+.eky-cta{background:var(--teal);padding:140px 0;text-align:center;}
+.eky-cta-h{font-family:var(--font-display);font-size:clamp(48px,7vw,96px);font-weight:900;text-transform:uppercase;line-height:.95;color:var(--white);margin-bottom:12px;}
+.eky-cta-h .ao{color:var(--orange);}
+.eky-cta-h .at{color:var(--teal-light);}
+.eky-cta-sub{font-size:18px;line-height:1.7;color:rgba(245,245,245,.65);max-width:600px;margin:0 auto 48px;}
+.eky-cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
+
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+@media(max-width:768px){
+  .eky-hero{padding:calc(var(--ticker-h)+var(--nav-h)+48px) 0 72px;}
+  .s-dark,.s-darker,.s-teal,.s-mid{padding:80px 0;}
+  .eky-intro{padding:80px 0;}
+}
+
+/* ── Audit tool wrapper ── */
+.audit-wrap{padding:calc(var(--ticker-h) + var(--nav-h)) 0 0;min-height:100vh;}
+.audit-wrap *{box-sizing:border-box;}
+</style></head><body><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TJVTCR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><div class="ticker" aria-hidden="true"><div class="ticker-track">
+<span class="ticker-item">Custom Strategy</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Fixed Scope</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">No Hourly Billing</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">AI-Integrated Growth</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Systems That Give You Your Bandwidth Back</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Business Owners Shouldn't Have to Become Marketers</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Custom Strategy</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Fixed Scope</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">No Hourly Billing</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">AI-Integrated Growth</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Systems That Give You Your Bandwidth Back</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Business Owners Shouldn't Have to Become Marketers</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+</div></div><nav id="mainNav"><div class="nav-inner">
+  <a href="/" class="nav-logo-svg">
+    <span class="nav-logo-wordmark">LOVELAND<span class="nav-logo-dot">.</span></span>
+    <span class="nav-logo-sub">Brand Design</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/work">Our Work</a></li>
+    <li class="nav-dropdown">
+      <a href="/solutions">Solutions</a>
+      <div class="nav-drop-menu">
+        <span class="nav-drop-label">Seven Movements</span>
+        <a href="/solutions/marketing-action-plan" class="nav-drop-item">Marketing Action Plan</a>
+        <a href="/solutions/brand-architecture" class="nav-drop-item">Brand Architecture</a>
+        <a href="/solutions/digital-ecosystem" class="nav-drop-item">Digital Ecosystem</a>
+        <a href="/solutions/marketing-operations" class="nav-drop-item">Marketing Operations</a>
+        <a href="/solutions/content-and-social" class="nav-drop-item">Content and Social</a>
+        <a href="/solutions/prospecting-and-pipeline" class="nav-drop-item">Prospecting and Pipeline</a>
+        <a href="/solutions/digital-advertising" class="nav-drop-item">Digital Advertising</a>
+        <div class="nav-drop-divider"></div>
+        <a href="/solutions" class="nav-drop-item accent">View All Solutions →</a>
+      </div>
+    </li>
+    <li class="nav-dropdown">
+      <a href="/insights">Resources</a>
+      <div class="nav-drop-menu">
+        <a href="/insights" class="nav-drop-item">Insights</a>
+        <a href="/faqs" class="nav-drop-item">FAQs</a>
+        <a href="/12-pillars-of-digital-marketing-health" class="nav-drop-item">12 Pillars</a>
+        <div class="nav-drop-divider"></div>
+        <a href="/eky" class="nav-drop-item">Eastern Kentucky</a>
+      </div>
+    </li>
+    <li><a href="/approach">Approach</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><span class="nav-phone">617.686.5618</span></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <a href="/contact" class="nav-cta">Start My MAP</a>
+</div></nav><div class="audit-wrap"><div id="audit-root"></div></div><footer><div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo-svg">
+        <span class="footer-logo-wordmark">LOVELAND<span class="footer-logo-dot">.</span></span>
+        <span class="footer-logo-sub">Brand Design</span>
+      </div>
+      <p class="footer-tagline">AI-powered marketing systems for businesses doing work worth defending.</p>
+      <div class="footer-contact">
+        <a href="tel:6176865618">617.686.5618</a>
+        <a href="mailto:info@lovelandbranddesign.com">info@lovelandbranddesign.com</a>
+        <a href="#">Pikeville, Kentucky</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Solutions</div>
+      <ul>
+        <li><a href="/solutions/marketing-action-plan">Marketing Action Plan</a></li>
+        <li><a href="/solutions/brand-architecture">Brand Architecture</a></li>
+        <li><a href="/solutions/digital-ecosystem">Digital Ecosystem</a></li>
+        <li><a href="/solutions/marketing-operations">Marketing Operations</a></li>
+        <li><a href="/solutions/content-and-social">Content and Social</a></li>
+        <li><a href="/solutions/prospecting-and-pipeline">Prospecting & Pipeline</a></li>
+        <li><a href="/solutions/digital-advertising">Digital Advertising</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Company</div>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/approach">Approach</a></li>
+        <li><a href="/work">Our Work</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/insights">Insights</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Start Here</div>
+      <ul>
+        <li><a href="/contact">Start My MAP</a></li>
+        <li><a href="mailto:info@lovelandbranddesign.com">Send an Email</a></li>
+        <li><a href="tel:6176865618">Call Us</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Loveland Brand Design LLC. Pikeville, Kentucky.</div>
+    <ul class="footer-values"><li>Simplicity</li><li>Systems</li><li>Fit</li><li>Freedom</li><li>Honesty</li></ul>
+  </div>
+</div></footer><script>
+const nav=document.getElementById('mainNav');
+if(nav) window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>80);},{passive:true});
+const io=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{q.parentElement.classList.toggle('open');});});
+const burger=document.getElementById('navBurger');
+const navLinks=document.querySelector('.nav-links');
+if(burger&&navLinks){
+  burger.addEventListener('click',()=>{burger.classList.toggle('open');navLinks.classList.toggle('open');});
+  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{a.addEventListener('click',()=>{burger.classList.remove('open');navLinks.classList.remove('open');});});
+}
+document.querySelectorAll('.nav-dropdown > a').forEach(function(trigger){
+  trigger.addEventListener('click',function(e){
+    if(window.innerWidth > 768){
+      e.preventDefault();
+      e.stopPropagation();
+      var menu = this.nextElementSibling;
+      var isOpen = menu.classList.contains('open');
+      document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
+      if(!isOpen) menu.classList.add('open');
+    }
+  });
+});
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.nav-dropdown')){
+    document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
+  }
+});
+</script><script type="text/babel">
+
+const ORANGE = "#FD4F00";
+const CHARCOAL = "#2E2E2E";
+const OFF_WHITE = "#F7F5F2";
+const MID_GRAY = "#8A8A8A";
+const BORDER = "#E2DED8";
+
+const questions = [
+  {
+    id: "q1", pillar: "Web Presence",
+    text: "Which best describes your current website?",
+    options: [
+      { label: "We don't have a website, or only have a Facebook page", score: 1 },
+      { label: "We have a website but it's outdated or rarely updated", score: 2 },
+      { label: "We have a modern, regularly updated website", score: 3 }
+    ]
+  },
+  {
+    id: "q2", pillar: "Social Media",
+    text: "How consistently does your business post on social media?",
+    options: [
+      { label: "Rarely or never. Only when we remember.", score: 1 },
+      { label: "Occasionally, but no real schedule", score: 2 },
+      { label: "Consistently, with a content plan or calendar", score: 3 }
+    ]
+  },
+  {
+    id: "q3", pillar: "Lead Capture",
+    text: "How do you collect contact info from interested customers?",
+    options: [
+      { label: "We don't. People call, walk in, or find us by word of mouth.", score: 1 },
+      { label: "We have a contact form but don't actively use it", score: 2 },
+      { label: "We actively capture leads via forms, email sign-ups, or a CRM", score: 3 }
+    ]
+  },
+  {
+    id: "q4", pillar: "Automation",
+    text: "What happens after someone contacts or shows interest in your business?",
+    options: [
+      { label: "Nothing automatic. We follow up manually when we can.", score: 1 },
+      { label: "We try to follow up but it's inconsistent", score: 2 },
+      { label: "We have automated follow-up sequences or a booking flow", score: 3 }
+    ]
+  },
+  {
+    id: "q5", pillar: "Online Booking / E-Commerce",
+    text: "Can customers buy from you or book a service directly online?",
+    options: [
+      { label: "No. Everything goes through phone, email, or in person.", score: 1 },
+      { label: "We use a third-party platform (Airbnb, Etsy, OpenTable, etc.) but not our own", score: 2 },
+      { label: "Yes. We have direct online booking or a store on our own website.", score: 3 }
+    ]
+  },
+  {
+    id: "q6", pillar: "Digital Advertising",
+    text: "Are you currently running paid digital ads?",
+    options: [
+      { label: "No paid advertising at all", score: 1 },
+      { label: "Occasional boosted posts but no real campaign strategy", score: 2 },
+      { label: "Active campaigns on Google, Meta, or other platforms with tracking", score: 3 }
+    ]
+  },
+  {
+    id: "q7", pillar: "Analytics",
+    text: "How do you track what's working in your marketing?",
+    options: [
+      { label: "We don't. We go by feel or word of mouth.", score: 1 },
+      { label: "We check social likes and follower counts occasionally", score: 2 },
+      { label: "We track website traffic, conversions, and ad performance regularly", score: 3 }
+    ]
+  },
+  {
+    id: "q8", pillar: "Reviews & Reputation",
+    text: "How are you managing your online reviews and reputation?",
+    options: [
+      { label: "We don't actively manage reviews", score: 1 },
+      { label: "We respond sometimes but don't actively ask for reviews", score: 2 },
+      { label: "We actively request reviews and respond to all of them", score: 3 }
+    ]
+  },
+  {
+    id: "q9", pillar: "CRM & Pipeline",
+    text: "How do you track your leads and customer relationships?",
+    options: [
+      { label: "No system. We rely on memory, texts, or emails.", score: 1 },
+      { label: "A spreadsheet or basic list", score: 2 },
+      { label: "A CRM or pipeline tool (HubSpot, Salesforce, etc.)", score: 3 }
+    ]
+  },
+  {
+    id: "q10", pillar: "AI & Automation Tools",
+    text: "Are you using AI or automation tools in your marketing or operations?",
+    options: [
+      { label: "No. Not using any AI tools.", score: 1 },
+      { label: "Occasionally using ChatGPT or similar for basic tasks", score: 2 },
+      { label: "AI tools are integrated into our workflow across content, scheduling, and analysis", score: 3 }
+    ]
+  },
+  {
+    id: "q11", pillar: "Buyer Personas",
+    text: "How well defined is your ideal customer?",
+    options: [
+      { label: "We haven't formally defined our customer. We market to anyone who might buy.", score: 1 },
+      { label: "We have a general sense of who our customer is but nothing documented", score: 2 },
+      { label: "We have documented personas with demographics, motivations, and buying behaviors", score: 3 }
+    ]
+  },
+  {
+    id: "q12", pillar: "Content Strategy",
+    text: "How does your business approach content creation?",
+    options: [
+      { label: "We post when we have time or something comes up. No real plan.", score: 1 },
+      { label: "We create content regularly but it is not tied to specific goals or audiences", score: 2 },
+      { label: "We have a documented content strategy tied to audience personas and business goals", score: 3 }
+    ]
+  }
+];
+
+const pillars = [
+  { num: "01", name: "Web Presence", desc: "Is your digital front door open and current?" },
+  { num: "02", name: "Social Media", desc: "Are you showing up consistently where your audience is?" },
+  { num: "03", name: "Lead Capture", desc: "Can you collect and follow up with interested prospects?" },
+  { num: "04", name: "Automation", desc: "Does your marketing work when you're not watching it?" },
+  { num: "05", name: "Online Booking / E-Commerce", desc: "Can customers buy or book directly from you online?" },
+  { num: "06", name: "Digital Advertising", desc: "Are you actively reaching new audiences with paid media?" },
+  { num: "07", name: "Analytics", desc: "Do you know what's working and what isn't?" },
+  { num: "08", name: "Reviews & Reputation", desc: "Are you managing what people see when they search for you?" },
+  { num: "09", name: "CRM & Pipeline", desc: "Do you have a system for tracking and following up with leads?" },
+  { num: "10", name: "AI & Automation Tools", desc: "Are modern tools working in your business?" },
+  { num: "11", name: "Buyer Personas", desc: "Do you know exactly who your customer is and what drives them?" },
+  { num: "12", name: "Content Strategy", desc: "Is your content intentional, audience-driven, and tied to your goals?" }
+];
+
+function getRating(avg) {
+  if (avg < 1.6) return "L";
+  if (avg < 2.4) return "M";
+  return "H";
+}
+
+function getBarColor(score) {
+  if (score === 1) return "#C0392B";
+  if (score === 2) return "#E67E22";
+  return "#27AE60";
+}
+
+function getBadgeStyle(rating) {
+  if (rating === "L") return { background: "#FDECEA", color: "#C0392B", border: "1px solid #F5C6C2" };
+  if (rating === "M") return { background: "#FEF3E7", color: "#E67E22", border: "1px solid #F9D4A0" };
+  return { background: "#E9F7EF", color: "#27AE60", border: "1px solid #A9DFBF" };
+}
+
+function renderReport(text) {
+  const clean = text.replace(/-/g, " ").replace(/\s{2,}/g, " ");
+  const lines = clean.split("\n");
+  return lines.map((line, i) => {
+    if (/^\*\*(.+)\*\*$/.test(line.trim())) {
+      const heading = line.trim().replace(/\*\*/g, "");
+      return <p key={i} style={{ fontWeight: 800, fontSize: 15, marginTop: 20, marginBottom: 6, color: CHARCOAL }}>{heading}</p>;
+    }
+    if (/^[•]\s+/.test(line.trim())) {
+      const item = line.trim().replace(/^[•]\s+/, "");
+      const itemClean = item.replace(/\*\*(.+?)\*\*/g, "$1");
+      return <li key={i} style={{ marginLeft: 18, marginBottom: 6, fontSize: 14, lineHeight: 1.7 }}>{itemClean}</li>;
+    }
+    if (line.trim() === "") return <br key={i} />;
+    const parts = line.split(/\*\*(.+?)\*\*/g);
+    return (
+      <p key={i} style={{ fontSize: 14, lineHeight: 1.8, marginBottom: 4 }}>
+        {parts.map((p, j) => j % 2 === 1 ? <strong key={j}>{p}</strong> : p)}
+      </p>
+    );
+  });
+}
+
+function App() {
+  const [screen, setScreen] = useState("landing");
+  const [bizName, setBizName] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [industry, setIndustry] = useState("");
+  const [answers, setAnswers] = useState({});
+  const [report, setReport] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [scores, setScores] = useState({});
+  const [rating, setRating] = useState("");
+  const [total, setTotal] = useState(0);
+  const formRef = useRef(null);
+
+  const scrollToForm = () => {
+    setScreen("form");
+    setTimeout(() => formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 50);
+  };
+
+  const handleAnswer = (qId, score) => {
+    setAnswers(prev => ({ ...prev, [qId]: score }));
+  };
+
+  const runAudit = async () => {
+    if (!firstName.trim() || !lastName.trim()) { alert("Please enter your first and last name."); return; }
+    if (!email.trim()) { alert("Please enter your email address."); return; }
+    if (!bizName.trim()) { alert("Please enter your business name."); return; }
+    if (!industry) { alert("Please select your industry."); return; }
+    const unanswered = questions.filter(q => !answers[q.id]);
+    if (unanswered.length > 0) { alert("Please answer all 12 questions before generating your report."); return; }
+
+    const scoreMap = {};
+    questions.forEach(q => { scoreMap[q.id] = answers[q.id]; });
+    const tot = Object.values(scoreMap).reduce((a, b) => a + b, 0);
+    const avg = tot / 12;
+    const rat = getRating(avg);
+
+    setScores(scoreMap);
+    setTotal(tot);
+    setRating(rat);
+    setScreen("results");
+    setLoading(true);
+    setReport("");
+
+    const ratingLabels = { L: "Limited", M: "Moderate", H: "High" };
+    const ratingDefs = {
+      L: "Your digital marketing infrastructure is fragmented or missing. Growth is happening by accident, not by design.",
+      M: "You have pieces in place but they are not working together. Revenue is being left on the table between the gaps.",
+      H: "Your marketing systems are integrated and intentional. The opportunity now is optimization and scale."
+    };
+    const answerSummary = questions.map(q => {
+      const s = scoreMap[q.id];
+      return `${q.pillar}: ${q.options[s - 1].label} (Score: ${s}/3)`;
+    }).join("\n");
+
+    const prompt = `You are a digital marketing strategist analyzing a small or mid-sized business in Eastern Kentucky. You have been given their responses to a 12-pillar digital marketing audit.
+
+Business name: ${bizName}
+Contact: ${firstName} ${lastName}
+Industry: ${industry}
+Overall maturity rating: ${rat} (${ratingLabels[rat]}) — ${ratingDefs[rat]}
+Average score: ${avg.toFixed(1)}/3
+
+Audit responses:
+${answerSummary}
+
+Write a plain-English digital marketing gap analysis for this business. Address ${firstName} directly. Reference their industry (${industry}) where relevant to make the analysis specific. Structure your response exactly like this:
+
+**Overall Assessment**
+2 to 3 sentences summarizing their current digital marketing position and what the ${rat} rating means for them specifically. Reference the rating definition: ${ratingDefs[rat]}
+
+**Your Biggest Gaps**
+Bullet list of the 3 lowest-scoring pillars. For each, write 1 sentence explaining the real business cost in the context of the ${industry} industry: lost revenue, missed customers, or wasted time. Start each bullet with a bullet character.
+
+**Quick Wins**
+Bullet list of 2 to 3 specific, actionable things they can do in the next 30 days. Name real tools or concrete steps relevant to a ${industry} business. Start each bullet with a bullet character.
+
+**What Full-System Marketing Could Look Like**
+1 to 2 sentences painting a picture of what ${bizName} looks like with a proper AI-powered marketing system in place.
+
+Keep the tone direct, warm, and specific. No generic marketing language. Write like a trusted advisor. Do not use hyphens anywhere in the response.`;
+
+    try {
+      const response = await fetch("/.netlify/functions/generate-audit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          model: "claude-sonnet-4-6",
+          max_tokens: 1000,
+          messages: [{ role: "user", content: prompt }]
+        })
+      });
+      const data = await response.json();
+      const text = data.content?.find(b => b.type === "text")?.text || "";
+      setReport(text);
+    } catch (err) {
+      setReport("Something went wrong generating your report. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const reset = () => {
+    setBizName(""); setFirstName(""); setLastName(""); setEmail(""); setPhone(""); setIndustry("");
+    setAnswers({}); setReport(""); setScores({}); setRating(""); setTotal(0);
+    setScreen("landing");
+  };
+
+  const pct = Math.round((total / 36) * 100);
+  const ratingLabels = { L: "Limited", M: "Moderate", H: "High" };
+  const ratingDefs = {
+    L: "Your digital marketing infrastructure is fragmented or missing. Growth is happening by accident, not by design.",
+    M: "You have pieces in place but they are not working together. Revenue is being left on the table between the gaps.",
+    H: "Your marketing systems are integrated and intentional. The opportunity now is optimization and scale."
+  };
+
+  const s = {
+    page: { fontFamily: "'Inter', system-ui, sans-serif", background: OFF_WHITE, color: CHARCOAL, minHeight: "100vh", fontSize: 14 },
+    hero: { background: CHARCOAL, color: "white", padding: "56px 24px", textAlign: "center" },
+    eyebrow: { fontFamily: "monospace", fontSize: 11, letterSpacing: "0.15em", textTransform: "uppercase", color: ORANGE, marginBottom: 16 },
+    h1: { fontSize: "clamp(28px,5vw,48px)", fontWeight: 900, lineHeight: 1.1, marginBottom: 16, letterSpacing: "-0.02em" },
+    heroSub: { fontSize: 16, color: "#B0ADA8", maxWidth: 480, margin: "0 auto 28px", lineHeight: 1.7 },
+    cta: { display: "inline-block", background: ORANGE, color: "white", fontWeight: 700, fontSize: 15, padding: "13px 28px", borderRadius: 4, border: "none", cursor: "pointer", letterSpacing: "0.01em" },
+    whoWhy: { background: "#222", padding: "48px 24px" },
+    whoWhyInner: { maxWidth: 860, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: 40 },
+    whoWhyH2: { fontSize: 20, fontWeight: 800, color: "white", lineHeight: 1.3, marginBottom: 12 },
+    whoWhyP: { fontSize: 14, color: "#B0ADA8", lineHeight: 1.8 },
+    pillarsSection: { padding: "48px 24px", maxWidth: 900, margin: "0 auto" },
+    pillarsH2: { fontSize: 24, fontWeight: 800, marginBottom: 8, letterSpacing: "-0.01em" },
+    pillarsIntro: { color: MID_GRAY, fontSize: 14, marginBottom: 28, maxWidth: 560, lineHeight: 1.7 },
+    grid: { display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(220px,1fr))", gap: 14 },
+    card: { background: "white", border: `1px solid ${BORDER}`, borderRadius: 6, padding: 18 },
+    cardNum: { fontFamily: "monospace", fontSize: 11, color: ORANGE, marginBottom: 6 },
+    cardH3: { fontSize: 13, fontWeight: 700, marginBottom: 4 },
+    cardP: { fontSize: 12, color: MID_GRAY, lineHeight: 1.5 },
+    formSection: { background: "white", borderTop: `1px solid ${BORDER}`, padding: "48px 24px" },
+    formInner: { maxWidth: 640, margin: "0 auto" },
+    sectionLabel: { fontFamily: "monospace", fontSize: 11, letterSpacing: "0.14em", textTransform: "uppercase", color: MID_GRAY, marginBottom: 20, display: "block" },
+    formH2: { fontSize: 24, fontWeight: 800, marginBottom: 8 },
+    formSub: { color: MID_GRAY, fontSize: 14, marginBottom: 36, lineHeight: 1.7 },
+    qBlock: { marginBottom: 28, paddingBottom: 28, borderBottom: `1px solid ${BORDER}` },
+    qLabel: { fontFamily: "monospace", fontSize: 11, letterSpacing: "0.12em", textTransform: "uppercase", color: ORANGE, marginBottom: 6, display: "block" },
+    qText: { fontSize: 15, fontWeight: 700, marginBottom: 14, lineHeight: 1.4 },
+    optionBase: { display: "flex", alignItems: "flex-start", gap: 10, padding: "12px 14px", border: `1.5px solid ${BORDER}`, borderRadius: 6, cursor: "pointer", fontSize: 13, lineHeight: 1.5, marginBottom: 8, transition: "border-color 0.1s" },
+    optionSelected: { borderColor: ORANGE, background: "#FFF3EE" },
+    bizInput: { width: "100%", padding: "11px 14px", border: `1.5px solid ${BORDER}`, borderRadius: 6, fontSize: 14, fontFamily: "inherit", outline: "none", background: OFF_WHITE, boxSizing: "border-box" },
+    submitBtn: { width: "100%", background: ORANGE, color: "white", border: "none", padding: "15px 24px", fontSize: 15, fontWeight: 700, fontFamily: "inherit", borderRadius: 6, cursor: "pointer", marginTop: 8 },
+    results: { padding: "48px 24px", maxWidth: 740, margin: "0 auto" },
+    resultsH2: { fontSize: 22, fontWeight: 800, marginBottom: 12 },
+    badge: { display: "inline-flex", alignItems: "center", gap: 10, padding: "8px 18px", borderRadius: 4, fontFamily: "monospace", fontSize: 13 },
+    badgeLetter: { fontSize: 24, fontWeight: 900 },
+    scoreRow: { display: "flex", alignItems: "center", gap: 10, marginBottom: 10 },
+    scoreLabel: { width: 155, flexShrink: 0, fontWeight: 600, fontSize: 12 },
+    scoreTrack: { flex: 1, height: 6, background: BORDER, borderRadius: 3, overflow: "hidden" },
+    scoreVal: { fontFamily: "monospace", fontSize: 11, color: MID_GRAY, width: 24, textAlign: "right" },
+    reportBox: { background: "white", border: `1px solid ${BORDER}`, borderRadius: 8, padding: 24, marginTop: 20, minHeight: 160, lineHeight: 1.8 },
+    nextSteps: { background: CHARCOAL, borderRadius: 8, padding: 36, marginTop: 32 },
+    nextH2: { fontSize: 20, fontWeight: 800, color: "white", lineHeight: 1.3, marginBottom: 12 },
+    nextP: { fontSize: 14, color: "#B0ADA8", lineHeight: 1.8, marginBottom: 16 },
+    nextLi: { fontSize: 13, color: "#B0ADA8", paddingLeft: 20, position: "relative", lineHeight: 1.6, marginBottom: 8, listStyle: "none" },
+    nextClosing: { fontSize: 14, color: "white", fontWeight: 500, borderTop: "1px solid #3E3E3E", paddingTop: 16, marginTop: 8, lineHeight: 1.7 },
+    nextCta: { display: "inline-block", background: ORANGE, color: "white", fontWeight: 700, fontSize: 14, padding: "13px 28px", borderRadius: 4, textDecoration: "none", marginTop: 16 },
+    resetBtn: { marginTop: 24, background: "transparent", border: `1.5px solid ${CHARCOAL}`, color: CHARCOAL, padding: "11px 22px", fontSize: 13, fontWeight: 600, fontFamily: "inherit", borderRadius: 4, cursor: "pointer" },
+    footer: { background: CHARCOAL, color: "#7A7875", textAlign: "center", padding: "28px 24px", fontSize: 12 },
+    spinner: { width: 18, height: 18, border: `2px solid ${BORDER}`, borderTopColor: ORANGE, borderRadius: "50%", animation: "spin 0.7s linear infinite", display: "inline-block", marginRight: 10 }
+  };
+
+  return (
+    <div style={s.page}>
+      <style>{`@keyframes spin{to{transform:rotate(360deg)}} @media(max-width:600px){.who-why-inner{grid-template-columns:1fr!important}}`}</style>
+
+      {/* HERO */}
+      <div style={s.hero}>
+        <p style={s.eyebrow}>Free Tool · Powered by AI · Built for Eastern Kentucky</p>
+        <h1 style={s.h1}>How strong is your <span style={{ color: ORANGE }}>digital marketing?</span></h1>
+        <p style={s.heroSub}>Answer 12 questions. Get an instant maturity rating and a plain English gap analysis. No agency required.</p>
+        <button style={s.cta} onClick={scrollToForm}>Run my free audit →</button>
+      </div>
+
+      {/* WHO + WHY */}
+      <div style={s.whoWhy}>
+        <div style={s.whoWhyInner} className="who-why-inner">
+          <div>
+            <span style={{ ...s.sectionLabel, color: ORANGE }}>Who this is for</span>
+            <h2 style={s.whoWhyH2}>Built for business owners who are ready to grow with intention.</h2>
+            <p style={s.whoWhyP}>This tool is for small business owners, nonprofit leaders, tourism operators, and founders who want to stop guessing and start making decisions based on real data. It gives you a scored picture of your digital ecosystem across 12 pillars so you can identify exactly which channels and systems deserve your time and investment. The output helps you hypertarget the right buyers, users, and prospects and build personas grounded in where your audience actually lives online.</p>
+          </div>
+          <div>
+            <span style={{ ...s.sectionLabel, color: ORANGE }}>What it solves</span>
+            <h2 style={s.whoWhyH2}>Sharper focus. Better reach. The right audience.</h2>
+            <p style={s.whoWhyP}>Businesses invest time and money in marketing without knowing which efforts are reaching the right people. This tool produces an immediate, pillar by pillar performance rating that shows exactly where your digital marketing is strong, where it is underperforming, and what to prioritize to attract and convert the right audience. The result is less scatter, more targeted reach, and a clear starting point for building personas that reflect real buyers.</p>
+          </div>
+        </div>
+      </div>
+
+      {/* PILLARS */}
+      {screen !== "results" && (
+        <div style={s.pillarsSection}>
+          <span style={s.sectionLabel}>What we measure</span>
+          <h2 style={s.pillarsH2}>12 pillars of digital marketing health</h2>
+          <p style={s.pillarsIntro}>Great marketing is not one thing. It is 12 systems working together. This audit measures the pillars that determine whether your marketing is actually generating revenue and building the right audience. Your score across all 12 determines your maturity level: L (Limited), M (Moderate), or H (High).</p>
+          <div style={s.grid}>
+            {pillars.map(p => (
+              <div key={p.num} style={s.card}>
+                <p style={s.cardNum}>{p.num}</p>
+                <h3 style={s.cardH3}>{p.name}</h3>
+                <p style={s.cardP}>{p.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* FORM */}
+      {screen !== "results" && (
+        <div style={s.formSection} ref={formRef}>
+          <div style={s.formInner}>
+            <span style={s.sectionLabel}>The audit</span>
+            <h2 style={s.formH2}>Tell us about your business</h2>
+            <p style={s.formSub}>12 questions. Under 5 minutes. Your answers stay private and are used only to generate your report. Honest responses produce the most useful results.</p>
+
+            <div style={s.qBlock}>
+              <span style={s.qLabel}>About you</span>
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 12 }}>
+                <div>
+                  <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>First Name <span style={{ color: ORANGE }}>*</span></p>
+                  <input style={s.bizInput} value={firstName} onChange={e => setFirstName(e.target.value)} placeholder="First name" />
+                </div>
+                <div>
+                  <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Last Name <span style={{ color: ORANGE }}>*</span></p>
+                  <input style={s.bizInput} value={lastName} onChange={e => setLastName(e.target.value)} placeholder="Last name" />
+                </div>
+              </div>
+              <div style={{ marginBottom: 12 }}>
+                <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Email Address <span style={{ color: ORANGE }}>*</span></p>
+                <input style={s.bizInput} type="email" value={email} onChange={e => setEmail(e.target.value)} placeholder="you@yourbusiness.com" />
+              </div>
+              <div>
+                <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Phone <span style={{ color: MID_GRAY, fontWeight: 400 }}>(optional)</span></p>
+                <input style={s.bizInput} type="tel" value={phone} onChange={e => setPhone(e.target.value)} placeholder="(555) 000-0000" />
+              </div>
+            </div>
+
+            <div style={s.qBlock}>
+              <span style={s.qLabel}>About your business</span>
+              <div style={{ marginBottom: 12 }}>
+                <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Business Name <span style={{ color: ORANGE }}>*</span></p>
+                <input style={s.bizInput} value={bizName} onChange={e => setBizName(e.target.value)} placeholder="e.g. Mountain Valley Tours" />
+              </div>
+              <div>
+                <p style={{ fontSize: 13, fontWeight: 600, marginBottom: 6 }}>Industry <span style={{ color: ORANGE }}>*</span></p>
+                <select style={{ ...s.bizInput, appearance: "none", backgroundImage: "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A8A8A' stroke-width='1.5' fill='none'/%3E%3C/svg%3E\")", backgroundRepeat: "no-repeat", backgroundPosition: "right 14px center", paddingRight: 36, cursor: "pointer" }} value={industry} onChange={e => setIndustry(e.target.value)}>
+                  <option value="">Select your industry...</option>
+                  <optgroup label="Healthcare & Wellness">
+                    <option>Hospital / Health System</option>
+                    <option>Medical Practice / Clinic</option>
+                    <option>Dental Practice</option>
+                    <option>Mental Health / Counseling</option>
+                    <option>Physical Therapy / Rehabilitation</option>
+                    <option>Pharmacy</option>
+                    <option>Addiction Recovery Services</option>
+                    <option>Senior Care / Assisted Living</option>
+                    <option>Fitness / Personal Training</option>
+                    <option>Wellness / Spa / Massage</option>
+                  </optgroup>
+                  <optgroup label="Tourism & Hospitality">
+                    <option>Hotel / Lodging / Cabin Rental</option>
+                    <option>Restaurant / Food Service</option>
+                    <option>Tourism / Destination Marketing</option>
+                    <option>Outdoor Recreation / Adventure</option>
+                    <option>Event Venue</option>
+                    <option>Winery / Distillery / Brewery</option>
+                    <option>Tour Operator / Guide Service</option>
+                    <option>Marina / Watercraft Rental</option>
+                  </optgroup>
+                  <optgroup label="Professional Services">
+                    <option>Legal / Law Firm</option>
+                    <option>Accounting / Financial Services</option>
+                    <option>Insurance</option>
+                    <option>Real Estate</option>
+                    <option>Consulting</option>
+                    <option>Marketing / Advertising</option>
+                    <option>Architecture / Engineering</option>
+                    <option>Human Resources</option>
+                  </optgroup>
+                  <optgroup label="Retail & E-Commerce">
+                    <option>Retail Store</option>
+                    <option>E-Commerce / Online Store</option>
+                    <option>Grocery / Specialty Food</option>
+                    <option>Clothing / Apparel</option>
+                    <option>Home Goods / Furniture</option>
+                    <option>Auto Dealership / Parts</option>
+                    <option>Pharmacy / Health Products</option>
+                  </optgroup>
+                  <optgroup label="Construction & Trades">
+                    <option>General Contractor</option>
+                    <option>Home Builder / Developer</option>
+                    <option>Plumbing / HVAC / Electrical</option>
+                    <option>Landscaping / Lawn Care</option>
+                    <option>Roofing / Siding</option>
+                    <option>Interior Design / Remodeling</option>
+                    <option>Mining / Energy / Utilities</option>
+                  </optgroup>
+                  <optgroup label="Education">
+                    <option>University / College</option>
+                    <option>Community College / Technical School</option>
+                    <option>K-12 School / Academy</option>
+                    <option>Tutoring / Test Prep</option>
+                    <option>Childcare / Early Education</option>
+                    <option>Online Education / eLearning</option>
+                  </optgroup>
+                  <optgroup label="Nonprofit & Community">
+                    <option>Nonprofit Organization</option>
+                    <option>Foundation / Charitable Organization</option>
+                    <option>Faith-Based Organization</option>
+                    <option>Community Development</option>
+                    <option>Arts / Culture / Museum</option>
+                    <option>Economic Development</option>
+                    <option>Social Services</option>
+                  </optgroup>
+                  <optgroup label="Financial Services">
+                    <option>Bank / Credit Union</option>
+                    <option>Investment / Wealth Management</option>
+                    <option>CDFI / Community Lending</option>
+                    <option>Mortgage / Lending</option>
+                    <option>Tax Services</option>
+                  </optgroup>
+                  <optgroup label="Technology & Media">
+                    <option>Software / SaaS</option>
+                    <option>IT Services / Managed Services</option>
+                    <option>Media / Publishing / News</option>
+                    <option>Photography / Videography</option>
+                    <option>Graphic Design / Creative Agency</option>
+                    <option>Telecom / Broadband</option>
+                  </optgroup>
+                  <optgroup label="Agriculture & Food">
+                    <option>Farm / Agriculture</option>
+                    <option>Food Production / Manufacturing</option>
+                    <option>Farmers Market / Co-op</option>
+                    <option>Agritourism</option>
+                  </optgroup>
+                  <optgroup label="Other">
+                    <option>Government / Public Sector</option>
+                    <option>Transportation / Logistics</option>
+                    <option>Manufacturing</option>
+                    <option>Staffing / Workforce</option>
+                    <option>Pet Services / Veterinary</option>
+                    <option>Beauty / Salon / Barber</option>
+                    <option>Child / Family Services</option>
+                    <option>Other</option>
+                  </optgroup>
+                </select>
+              </div>
+            </div>
+
+            {questions.map((q, idx) => (
+              <div key={q.id} style={s.qBlock}>
+                <span style={s.qLabel}>Pillar {String(idx + 1).padStart(2, "0")} — {q.pillar}</span>
+                <p style={s.qText}>{q.text}</p>
+                {q.options.map((opt, i) => (
+                  <div
+                    key={i}
+                    style={{ ...s.optionBase, ...(answers[q.id] === opt.score ? s.optionSelected : {}) }}
+                    onClick={() => handleAnswer(q.id, opt.score)}
+                  >
+                    <input type="radio" readOnly checked={answers[q.id] === opt.score} style={{ accentColor: ORANGE, marginTop: 2, flexShrink: 0 }} />
+                    <span>{opt.label}</span>
+                  </div>
+                ))}
+              </div>
+            ))}
+
+            <button style={s.submitBtn} onClick={runAudit}>Generate my audit report →</button>
+          </div>
+        </div>
+      )}
+
+      {/* RESULTS */}
+      {screen === "results" && (
+        <div style={s.results}>
+          <span style={s.sectionLabel}>Your results</span>
+          <h2 style={s.resultsH2}>{bizName} — Digital Marketing Audit</h2>
+          <p style={{ fontSize: 13, color: MID_GRAY, marginBottom: 16 }}>{firstName} {lastName} · {industry}</p>
+
+          <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", marginBottom: 12 }}>
+            <div style={{ ...s.badge, ...getBadgeStyle(rating) }}>
+              <span style={s.badgeLetter}>{rating}</span>
+              <span>{ratingLabels[rating]} Digital Maturity</span>
+            </div>
+            <span style={{ fontFamily: "monospace", fontSize: 22, fontWeight: 700 }}>{total}/36</span>
+            <span style={{ fontFamily: "monospace", fontSize: 13, color: MID_GRAY }}>·</span>
+            <span style={{ fontFamily: "monospace", fontSize: 22, fontWeight: 700 }}>{pct}%</span>
+          </div>
+          {rating && (
+            <p style={{ fontSize: 13, color: MID_GRAY, marginBottom: 24, lineHeight: 1.6, maxWidth: 560 }}>{ratingDefs[rating]}</p>
+          )}
+
+          <div style={{ marginBottom: 20 }}>
+            {questions.map(q => (
+              <div key={q.id} style={s.scoreRow}>
+                <span style={s.scoreLabel}>{q.pillar}</span>
+                <div style={s.scoreTrack}>
+                  <div style={{ height: "100%", borderRadius: 3, width: `${(scores[q.id] / 3) * 100}%`, background: getBarColor(scores[q.id]), transition: "width 0.6s ease" }} />
+                </div>
+                <span style={s.scoreVal}>{scores[q.id]}/3</span>
+              </div>
+            ))}
+          </div>
+
+          <div style={s.reportBox}>
+            {loading ? (
+              <div style={{ display: "flex", alignItems: "center", color: MID_GRAY, padding: "20px 0" }}>
+                <span style={s.spinner} />
+                <span style={{ fontFamily: "monospace", fontSize: 13 }}>Analyzing your responses…</span>
+              </div>
+            ) : (
+              <div>{renderReport(report)}</div>
+            )}
+          </div>
+
+          {!loading && report && (
+            <>
+              <div style={s.nextSteps}>
+                <span style={{ ...s.sectionLabel, color: ORANGE }}>Ready to put this into action?</span>
+                <h2 style={s.nextH2}>Your audit shows where you stand.<br />A Marketing Action Plan shows you how to move.</h2>
+                <p style={s.nextP}>LBD works with businesses across Eastern Kentucky to turn audit findings into a complete growth system. That means buyer persona development, digital advertising strategy, AI content tools, and a full digital ecosystem built around your actual customers.</p>
+                <ul style={{ padding: 0, margin: "0 0 16px 0" }}>
+                  {["Buyer and prospect persona development grounded in real audience data", "Digital advertising campaigns targeted to the right people at the right moment", "AI powered content and lead intake systems that work around the clock", "A complete Marketing Action Plan with phased priorities and clear ROI targets"].map((item, i) => (
+                    <li key={i} style={s.nextLi}><span style={{ position: "absolute", left: 0, color: ORANGE, fontWeight: 700 }}>→</span>{item}</li>
+                  ))}
+                </ul>
+                <p style={s.nextClosing}>The next step is a 30 minute discovery conversation with Aaron Loveland. No pitch. Just a real conversation about what your business needs and whether LBD is the right fit to build it.</p>
+                <a href="https://calendar.app.google/pQHWHokRwrvaa8qdA" target="_blank" rel="noreferrer" style={s.nextCta}>Book your discovery call →</a>
+              </div>
+              <button style={s.resetBtn} onClick={reset}>← Start over</button>
+            </>
+          )}
+        </div>
+      )}
+
+      <div style={s.footer}>
+        <p>Built by <strong style={{ color: ORANGE }}>Loveland Brand Design, LLC</strong> · Pikeville, KY · <strong style={{ color: ORANGE }}>lovelandbranddesign.com</strong></p>
+        <p style={{ marginTop: 6 }}>A SOAR Innovation company · Catalyze EKY · Social Enterprise Accelerator</p>
+      </div>
+    </div>
+  );
+}
+
+const domNode = document.getElementById("audit-root");
+const root = ReactDOM.createRoot(domNode);
+root.render(React.createElement(App));
+</script></body></html>
