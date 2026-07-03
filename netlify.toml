@@ -1,7 +1,5 @@
-# Build command removed — static HTML deploys directly.
 # Restore when blog posts are ready:
 # [build]
-#   command = "pip install -r requirements.txt --quiet && python3 build.py"
 #   publish = "."
 
 [build]
