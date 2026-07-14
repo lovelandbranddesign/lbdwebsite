@@ -710,5 +710,27 @@ document.addEventListener('click',function(e){
 <script>
 if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});}});}
 </script>
-</body>
+<script>
+(function(){
+  var b=document.getElementById('navBurger');
+  var n=document.querySelector('.nav-links');
+  if(!b||!n)return;
+  var nb=b.cloneNode(true);
+  b.parentNode.replaceChild(nb,b);
+  b=nb;
+  b.addEventListener('click',function(){
+    if(b.classList.contains('open')){
+      n.style.cssText='display:none;';
+      b.classList.remove('open');
+    }else{
+      document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.style.display='none';});
+      n.style.cssText='display:flex;flex-direction:column;position:fixed;top:112px;left:0;right:0;bottom:0;background:rgba(14,14,14,0.98);z-index:9999;overflow-y:auto;padding:8px 0;';
+      b.classList.add('open');
+    }
+  });
+  n.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click',function(){n.style.cssText='display:none;';b.classList.remove('open');});
+  });
+})();
+</script><!-- NAVOVERRIDE --></body>
 </html>
