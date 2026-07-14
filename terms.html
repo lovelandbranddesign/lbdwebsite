@@ -641,19 +641,17 @@ const burger=document.getElementById('navBurger');
 const navLinks=document.querySelector('.nav-links');
 if(burger&&navLinks){
   function openNav(){
-    navLinks.style.cssText='display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;padding-top:112px;background:rgba(14,14,14,0.98);z-index:9999;overflow-y:auto;';
+    document.querySelectorAll('.nav-drop-menu').forEach(m=>{m.style.display='none';});
+    navLinks.style.cssText='display:flex !important;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;padding-top:112px;background:rgba(14,14,14,0.98);z-index:9999;overflow:hidden;';
     burger.classList.add('open');
   }
   function closeNav(){
     navLinks.style.cssText='display:none;';
     burger.classList.remove('open');
   }
-  burger.addEventListener('click',()=>{
-    burger.classList.contains('open')?closeNav():openNav();
-  });
-  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{
-    a.addEventListener('click',()=>{closeNav();});
-  });
+  burger.addEventListener('click',()=>{burger.classList.contains('open')?closeNav():openNav();});
+  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{a.addEventListener('click',()=>{closeNav();});});
+});
 }
 document.querySelectorAll('.nav-dropdown > a').forEach(function(trigger){
   trigger.addEventListener('click',function(e){
