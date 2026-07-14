@@ -642,8 +642,20 @@ document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{
 const burger=document.getElementById('navBurger');
 const navLinks=document.querySelector('.nav-links');
 if(burger&&navLinks){
-  burger.addEventListener('click',()=>{burger.classList.toggle('open');navLinks.classList.toggle('open');});
-  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{a.addEventListener('click',()=>{burger.classList.remove('open');navLinks.classList.remove('open');});});
+  function openNav(){
+    navLinks.style.cssText='display:flex;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;padding-top:112px;background:rgba(14,14,14,0.98);z-index:9999;overflow-y:auto;';
+    burger.classList.add('open');
+  }
+  function closeNav(){
+    navLinks.style.cssText='display:none;';
+    burger.classList.remove('open');
+  }
+  burger.addEventListener('click',()=>{
+    burger.classList.contains('open')?closeNav():openNav();
+  });
+  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{
+    a.addEventListener('click',()=>{closeNav();});
+  });
 }
 document.querySelectorAll('.nav-dropdown > a').forEach(function(trigger){
   trigger.addEventListener('click',function(e){
