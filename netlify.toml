@@ -47,7 +47,12 @@
 
 [[redirects]]
   from = "/12-pillars-of-digital-marketing-health"
-  to = "/12-pillars-of-digital-marketing-health.html"
+  to = "/15-pillars-of-digital-marketing-health"
+  status = 301
+
+[[redirects]]
+  from = "/15-pillars-of-digital-marketing-health"
+  to = "/15-pillars-of-digital-marketing-health.html"
   status = 200
 
 [[redirects]]
