@@ -686,6 +686,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <input type="email" name="email"><input type="tel" name="phone"><input type="text" name="business-name">
 <input type="text" name="industry"><input type="text" name="rating"><input type="text" name="score">
 <textarea name="answers"></textarea>
+<textarea name="assessment"></textarea>
 </form>
 <div id="a12">
 <div class="a12-hero">
@@ -908,19 +909,6 @@ r.innerHTML='<span class="a12-slab">'+q.pillar+'</span><div class="a12-strack"><
 bars.appendChild(r);
 });
 document.getElementById('a12res').scrollIntoView({behavior:'smooth'});
-try{
-var lead='form-name=audit'
-+'&first-name='+encodeURIComponent(fn)
-+'&last-name='+encodeURIComponent(ln)
-+'&email='+encodeURIComponent(em)
-+'&phone='+encodeURIComponent(document.getElementById('a12ph').value.trim())
-+'&business-name='+encodeURIComponent(bn)
-+'&industry='+encodeURIComponent(ind)
-+'&rating='+encodeURIComponent(rat+' ('+RL[rat]+')')
-+'&score='+encodeURIComponent(tot+'/45')
-+'&answers='+encodeURIComponent(Q.map(function(q){return q.pillar+': '+ans[q.id]+'/3';}).join(' | '));
-fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:lead});
-}catch(e2){}
 var rep=document.getElementById('a12rep');
 rep.innerHTML='<div style="display:flex;align-items:center;color:#8A8A8A;padding:20px 0;"><span class="a12-spin"></span><span style="font-family:var(--font-display);font-size:13px;">Analyzing your responses\u2026</span></div>';
 var summary=Q.map(function(q){var s=ans[q.id];return q.pillar+': '+q.options[s-1][0]+' (Score: '+s+'/3)';}).join('\n');
@@ -932,6 +920,20 @@ var txt='';
 if(data&&data.content){data.content.forEach(function(b){if(b.type==='text')txt+=b.text;});}
 if(!txt)txt='Something went wrong generating your report. Please try again, or book a discovery call and we will walk through your results together.';
 rep.innerHTML=renderReport(txt);
+try{
+var lead='form-name=audit'
++'&first-name='+encodeURIComponent(fn)
++'&last-name='+encodeURIComponent(ln)
++'&email='+encodeURIComponent(em)
++'&phone='+encodeURIComponent(document.getElementById('a12ph').value.trim())
++'&business-name='+encodeURIComponent(bn)
++'&industry='+encodeURIComponent(ind)
++'&rating='+encodeURIComponent(rat+' ('+RL[rat]+')')
++'&score='+encodeURIComponent(tot+'/45')
++'&answers='+encodeURIComponent(Q.map(function(q){return q.pillar+': '+ans[q.id]+'/3';}).join(' | '))
++'&assessment='+encodeURIComponent(txt);
+fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:lead});
+}catch(e2){}
 document.getElementById('a12next').style.display='block';
 document.getElementById('a12reset').style.display='inline-block';
 })
