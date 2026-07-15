@@ -134,3 +134,8 @@
   from = "/insights/:slug"
   to = "/insights/:slug.html"
   status = 200
+
+[[redirects]]
+  from = "/thank-you"
+  to = "/thank-you.html"
+  status = 200
