@@ -488,7 +488,17 @@ footer{background:var(--black);padding:80px 0 40px;}
 }
 </style>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<style>@media(max-width:768px){.nav-links{display:none !important;position:fixed !important;top:0 !important;left:0 !important;right:0 !important;bottom:0 !important;padding-top:112px !important;background:rgba(14,14,14,.98) !important;flex-direction:column !important;z-index:9999 !important;overflow:hidden !important;}.nav-links.open{display:flex !important;}.nav-links li{width:100% !important;}.nav-links > li > a{display:block !important;padding:12px 28px !important;font-size:13px !important;font-family:var(--font-display) !important;font-weight:700 !important;letter-spacing:.12em !important;text-transform:uppercase !important;color:rgba(245,245,245,.85) !important;border-bottom:1px solid rgba(255,255,255,.06) !important;}.nav-drop-menu{display:none !important;}.nav-burger{display:flex !important;}.nav-cta{display:none !important;}.nav-phone{display:none !important;}}</style><!-- MOBILEFIX --></head>
+<style>@media(max-width:768px){
+.nav-burger{display:flex;}
+.nav-cta{display:none;}
+.nav-phone{display:none;}
+.nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;padding-top:120px;background:rgba(14,14,14,.98);flex-direction:column;z-index:9999;overflow-y:auto;}
+.nav-links.open{display:flex;}
+.nav-links li{width:100%;}
+.nav-links>li>a{display:block;padding:16px 32px;font-size:15px;}
+.nav-drop-menu{display:none;}
+.nav-dropdown>a::after{content:none;}
+}</style><!-- MOBILENAV2 --></head>
 <body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TJVTCR"
@@ -739,70 +749,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="footer-values"><li>Simplicity</li><li>Systems</li><li>Fit</li><li>Freedom</li><li>Honesty</li></ul>
   </div>
 </div></footer>
-<script>
-const nav=document.getElementById('mainNav');
-if(nav) window.addEventListener('scroll',()=>{nav.classList.toggle('scrolled',window.scrollY>80);},{passive:true});
-const io=new IntersectionObserver((e)=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
-document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
-document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{q.parentElement.classList.toggle('open');});});
-const burger=document.getElementById('navBurger');
-const navLinks=document.querySelector('.nav-links');
-if(burger&&navLinks){
-  function openNav(){
-    document.querySelectorAll('.nav-drop-menu').forEach(m=>{m.style.display='none';});
-    navLinks.style.cssText='display:flex !important;flex-direction:column;position:fixed;top:0;left:0;right:0;bottom:0;padding-top:112px;background:rgba(14,14,14,0.98);z-index:9999;overflow:hidden;';
-    burger.classList.add('open');
-  }
-  function closeNav(){
-    navLinks.style.cssText='display:none;';
-    burger.classList.remove('open');
-  }
-  burger.addEventListener('click',()=>{burger.classList.contains('open')?closeNav():openNav();});
-  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{a.addEventListener('click',()=>{closeNav();});});
-});
-}
-document.querySelectorAll('.nav-dropdown > a').forEach(function(trigger){
-  trigger.addEventListener('click',function(e){
-    if(window.innerWidth > 768){
-      e.preventDefault();
-      e.stopPropagation();
-      var menu = this.nextElementSibling;
-      var isOpen = menu.classList.contains('open');
-      document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
-      if(!isOpen) menu.classList.add('open');
-    }
-  });
-});
-document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-dropdown')){
-    document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
-  }
-});
-</script>
+
 <script>
 if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});}});}
 </script>
 <script>
 (function(){
-  var b=document.getElementById('navBurger');
-  var n=document.querySelector('.nav-links');
-  if(!b||!n)return;
-  var nb=b.cloneNode(true);
-  b.parentNode.replaceChild(nb,b);
-  b=nb;
-  b.addEventListener('click',function(){
-    if(b.classList.contains('open')){
-      n.style.cssText='display:none;';
-      b.classList.remove('open');
-    }else{
-      document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.style.display='none';});
-      n.style.cssText='display:flex;flex-direction:column;position:fixed;top:112px;left:0;right:0;bottom:0;background:rgba(14,14,14,0.98);z-index:9999;overflow-y:auto;padding:8px 0;';
-      b.classList.add('open');
-    }
-  });
-  n.querySelectorAll('a').forEach(function(a){
-    a.addEventListener('click',function(){n.style.cssText='display:none;';b.classList.remove('open');});
-  });
+var nav=document.getElementById('mainNav');
+if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>80);},{passive:true});}
+var els=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+els.forEach(function(el){io.observe(el);});
+}else{els.forEach(function(el){el.classList.add('visible');});}
+document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){q.parentElement.classList.toggle('open');});});
+var b=document.getElementById('navBurger'),n=document.querySelector('.nav-links');
+if(b&&n){
+b.addEventListener('click',function(){b.classList.toggle('open');n.classList.toggle('open');});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('open');n.classList.remove('open');});});
+}
 })();
-</script><!-- NAVOVERRIDE --></body>
+</script></body>
 </html>
