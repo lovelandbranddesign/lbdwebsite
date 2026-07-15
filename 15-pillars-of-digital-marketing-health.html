@@ -680,7 +680,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </ul>
   <button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
   <a href="/contact" class="nav-cta">Start My MAP</a>
-</div></nav><div id="a12">
+</div></nav><form name="audit" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+<input type="hidden" name="form-name" value="audit">
+<input name="bot-field"><input type="text" name="first-name"><input type="text" name="last-name">
+<input type="email" name="email"><input type="tel" name="phone"><input type="text" name="business-name">
+<input type="text" name="industry"><input type="text" name="rating"><input type="text" name="score">
+<textarea name="answers"></textarea>
+</form>
+<div id="a12">
 <div class="a12-hero">
 <p class="a12-eyebrow">Free Tool &middot; Powered by AI &middot; Built for Eastern Kentucky</p>
 <h1 class="a12-h1">How strong is your <span>digital marketing?</span></h1>
@@ -901,6 +908,19 @@ r.innerHTML='<span class="a12-slab">'+q.pillar+'</span><div class="a12-strack"><
 bars.appendChild(r);
 });
 document.getElementById('a12res').scrollIntoView({behavior:'smooth'});
+try{
+var lead='form-name=audit'
++'&first-name='+encodeURIComponent(fn)
++'&last-name='+encodeURIComponent(ln)
++'&email='+encodeURIComponent(em)
++'&phone='+encodeURIComponent(document.getElementById('a12ph').value.trim())
++'&business-name='+encodeURIComponent(bn)
++'&industry='+encodeURIComponent(ind)
++'&rating='+encodeURIComponent(rat+' ('+RL[rat]+')')
++'&score='+encodeURIComponent(tot+'/45')
++'&answers='+encodeURIComponent(Q.map(function(q){return q.pillar+': '+ans[q.id]+'/3';}).join(' | '));
+fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:lead});
+}catch(e2){}
 var rep=document.getElementById('a12rep');
 rep.innerHTML='<div style="display:flex;align-items:center;color:#8A8A8A;padding:20px 0;"><span class="a12-spin"></span><span style="font-family:var(--font-display);font-size:13px;">Analyzing your responses\u2026</span></div>';
 var summary=Q.map(function(q){var s=ans[q.id];return q.pillar+': '+q.options[s-1][0]+' (Score: '+s+'/3)';}).join('\n');
