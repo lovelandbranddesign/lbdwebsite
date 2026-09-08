@@ -1,15 +1,15 @@
 <!DOCTYPE html><html lang="en"><head><!-- Google Tag Manager --><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src="https://www.googletagmanager.com/gtm.js?id="+i+dl;f.parentNode.insertBefore(j,f);})(window,document,"script","dataLayer","GTM-N9TJVTCR");</script><!-- End Google Tag Manager --><script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Insights | Loveland Brand Design</title><meta name="description" content="Strategy frameworks, system thinking, and honest takes on what works in marketing for businesses doing real work."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"><style>
 :root {
-  --orange:#FD4F00; --orange-dark:#C93D00;
-  --charcoal:#2E2E2E; --charcoal-dk:#1C1C1C;
-  --beige:#F5F5F5; --mid-grey:#8A8A8A;
-  --teal:#053343; --teal-mid:#0A5568;
-  --teal-light:#0D7A8F; --teal-dark:#032530;
-  --gold:#D1A046; --gold-light:#E4BE7A;
-  --white:#FFFFFF; --black:#0A0A0A;
-  --font-display:'Barlow Condensed',sans-serif;
-  --font-body:'Inter',sans-serif;
-  --nav-h:72px; --ticker-h:40px;
+--orange:#FD4F00; --orange-dark:#C93D00;
+--charcoal:#2E2E2E; --charcoal-dk:#1C1C1C;
+--beige:#F5F5F5; --mid-grey:#8A8A8A;
+--teal:#053343; --teal-mid:#0A5568;
+--teal-light:#0D7A8F; --teal-dark:#032530;
+--gold:#D1A046; --gold-light:#E4BE7A;
+--white:#FFFFFF; --black:#0A0A0A;
+--font-display:'Barlow Condensed',sans-serif;
+--font-body:'Inter',sans-serif;
+--nav-h:72px; --ticker-h:40px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
@@ -262,68 +262,68 @@ footer{background:var(--black);padding:80px 0 40px;}
 
 /* RESPONSIVE */
 @media(max-width:960px){
-  .container{padding:0 28px;}
-  .nav-inner{padding:0 28px;}
-  .two-col,.sidebar-left{grid-template-columns:1fr;gap:48px;}
-  .three-col{grid-template-columns:repeat(2,1fr);}
-  .four-col{grid-template-columns:repeat(2,1fr);}
-  .pillar-grid{grid-template-columns:repeat(2,1fr);}
-  .work-grid{grid-template-columns:repeat(2,1fr);}
-  .insight-grid{grid-template-columns:repeat(2,1fr);}
-  .footer-grid{grid-template-columns:1fr 1fr;}
-  .stat-bar{grid-template-columns:repeat(2,1fr);}
-  .service-row{grid-template-columns:1fr;gap:16px;}
-  .movement-item{grid-template-columns:48px 1fr;} .mi-arrow{display:none;}
-  .field-row{grid-template-columns:1fr;}
+.container{padding:0 28px;}
+.nav-inner{padding:0 28px;}
+.two-col,.sidebar-left{grid-template-columns:1fr;gap:48px;}
+.three-col{grid-template-columns:repeat(2,1fr);}
+.four-col{grid-template-columns:repeat(2,1fr);}
+.pillar-grid{grid-template-columns:repeat(2,1fr);}
+.work-grid{grid-template-columns:repeat(2,1fr);}
+.insight-grid{grid-template-columns:repeat(2,1fr);}
+.footer-grid{grid-template-columns:1fr 1fr;}
+.stat-bar{grid-template-columns:repeat(2,1fr);}
+.service-row{grid-template-columns:1fr;gap:16px;}
+.movement-item{grid-template-columns:48px 1fr;} .mi-arrow{display:none;}
+.field-row{grid-template-columns:1fr;}
 }
 @media(max-width:600px){
-  .nav-links,.nav-phone{display:none;}
-  .three-col,.four-col,.pillar-grid,.work-grid,.insight-grid{grid-template-columns:1fr;}
-  .footer-grid{grid-template-columns:1fr;}
-  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
-  .stat-bar{grid-template-columns:1fr;}
+.nav-links,.nav-phone{display:none;}
+.three-col,.four-col,.pillar-grid,.work-grid,.insight-grid{grid-template-columns:1fr;}
+.footer-grid{grid-template-columns:1fr;}
+.footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+.stat-bar{grid-template-columns:1fr;}
 }
 
 .nav-dropdown { position: relative; }
 .nav-dropdown > a::after { content: ' ▾'; font-size: 9px; opacity: .5; }
 .nav-drop-menu {
-  display: none;
-  position: absolute;
-  top: calc(100% + 2px);
-  left: -16px;
-  background: rgba(20,20,20,.98);
-  backdrop-filter: blur(16px);
-  border: 1px solid rgba(245,245,245,.09);
-  min-width: 230px;
-  padding: 8px 0;
-  z-index: 300;
+display: none;
+position: absolute;
+top: calc(100% + 2px);
+left: -16px;
+background: rgba(20,20,20,.98);
+backdrop-filter: blur(16px);
+border: 1px solid rgba(245,245,245,.09);
+min-width: 230px;
+padding: 8px 0;
+z-index: 300;
 }
 .nav-dropdown:hover .nav-drop-menu { display: block; }
 .nav-drop-item {
-  display: block;
-  padding: 11px 20px;
-  font-family: var(--font-display);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  color: rgba(245,245,245,.52);
-  transition: color .15s, background .15s;
-  white-space: nowrap;
+display: block;
+padding: 11px 20px;
+font-family: var(--font-display);
+font-size: 11px;
+font-weight: 700;
+letter-spacing: .12em;
+text-transform: uppercase;
+color: rgba(245,245,245,.52);
+transition: color .15s, background .15s;
+white-space: nowrap;
 }
 .nav-drop-item:hover { color: var(--white); background: rgba(245,245,245,.04); }
 .nav-drop-item.accent { color: var(--orange); }
 .nav-drop-item.accent:hover { color: var(--orange-dark); }
 .nav-drop-divider { height: 1px; background: rgba(245,245,245,.07); margin: 6px 0; }
 .nav-drop-label {
-  display: block;
-  padding: 10px 20px 4px;
-  font-family: var(--font-display);
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: .2em;
-  text-transform: uppercase;
-  color: rgba(245,245,245,.25);
+display: block;
+padding: 10px 20px 4px;
+font-family: var(--font-display);
+font-size: 9px;
+font-weight: 700;
+letter-spacing: .2em;
+text-transform: uppercase;
+color: rgba(245,245,245,.25);
 }
 
 /* ── MOBILE NAV ── */
@@ -334,140 +334,140 @@ footer{background:var(--black);padding:80px 0 40px;}
 .nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
 
 @media(max-width:768px){
-  .nav-burger{display:flex;}
-  .nav-cta{display:none;}
-  .nav-links{
-    display:none;position:fixed;
-    top:calc(var(--ticker-h) + var(--nav-h));
-    left:0;right:0;bottom:0;
-    background:rgba(14,14,14,.98);backdrop-filter:blur(16px);
-    flex-direction:column;gap:0;
-    padding:8px 0 40px;
-    border-top:1px solid rgba(245,245,245,.08);
-    z-index:99;overflow-y:auto;
-  }
-  .nav-links.open{display:flex;}
-  .nav-links li{width:100%;}
-  .nav-links a{display:block;padding:14px 32px;font-size:14px;color:rgba(245,245,245,.8);}
-  .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.04);}
-  .nav-phone{display:none;}
-  .nav-dropdown>a::after{content:none;}
-  .nav-drop-menu{display:none!important;}
-  .nav-drop-item{padding:10px 32px 10px 48px;font-size:10px;color:rgba(245,245,245,.45);}
-  .nav-drop-label{padding:10px 32px 4px 48px;font-size:9px;}
-  .nav-drop-divider{margin:4px 32px;}
+.nav-burger{display:flex;}
+.nav-cta{display:none;}
+.nav-links{
+display:none;position:fixed;
+top:calc(var(--ticker-h) + var(--nav-h));
+left:0;right:0;bottom:0;
+background:rgba(14,14,14,.98);backdrop-filter:blur(16px);
+flex-direction:column;gap:0;
+padding:8px 0 40px;
+border-top:1px solid rgba(245,245,245,.08);
+z-index:99;overflow-y:auto;
+}
+.nav-links.open{display:flex;}
+.nav-links li{width:100%;}
+.nav-links a{display:block;padding:14px 32px;font-size:14px;color:rgba(245,245,245,.8);}
+.nav-links a:hover{color:var(--white);background:rgba(255,255,255,.04);}
+.nav-phone{display:none;}
+.nav-dropdown>a::after{content:none;}
+.nav-drop-menu{display:none!important;}
+.nav-drop-item{padding:10px 32px 10px 48px;font-size:10px;color:rgba(245,245,245,.45);}
+.nav-drop-label{padding:10px 32px 4px 48px;font-size:9px;}
+.nav-drop-divider{margin:4px 32px;}
 }
 
 /* ── MOBILE LAYOUT ── */
 @media(max-width:768px){
-  .container{padding:0 20px;}
-  .nav-inner{padding:0 20px;}
+.container{padding:0 20px;}
+.nav-inner{padding:0 20px;}
 
-  /* Page headers */
-  .page-header{padding:calc(var(--ticker-h) + var(--nav-h) + 48px) 0 48px;}
-  .page-heading{font-size:clamp(38px,9vw,64px);}
-  .page-sub{font-size:15px;}
+/* Page headers */
+.page-header{padding:calc(var(--ticker-h) + var(--nav-h) + 48px) 0 48px;}
+.page-heading{font-size:clamp(38px,9vw,64px);}
+.page-sub{font-size:15px;}
 
-  /* Sections */
-  .s-dark,.s-darker,.s-teal,.s-teal-dark,.s-light,.s-orange{padding:64px 0;}
+/* Sections */
+.s-dark,.s-darker,.s-teal,.s-teal-dark,.s-light,.s-orange{padding:64px 0;}
 
-  /* Typography */
-  .section-heading{font-size:clamp(30px,8vw,48px);}
-  .prose{font-size:15px;}
+/* Typography */
+.section-heading{font-size:clamp(30px,8vw,48px);}
+.prose{font-size:15px;}
 
-  /* Grids */
-  .two-col,.sidebar-left{grid-template-columns:1fr;gap:40px;}
-  .three-col,.four-col{grid-template-columns:1fr;}
-  .card-grid,.card-grid-2{grid-template-columns:1fr;}
-  .tier-grid{grid-template-columns:1fr;}
-  .pillar-grid{grid-template-columns:1fr 1fr;}
-  .work-grid{grid-template-columns:1fr;}
-  .insight-grid{grid-template-columns:1fr;}
-  .stat-bar{grid-template-columns:1fr 1fr;}
-  .footer-grid{grid-template-columns:1fr;}
-  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
-  .footer-values{flex-wrap:wrap;justify-content:center;gap:12px;}
-  .field-row{grid-template-columns:1fr;}
+/* Grids */
+.two-col,.sidebar-left{grid-template-columns:1fr;gap:40px;}
+.three-col,.four-col{grid-template-columns:1fr;}
+.card-grid,.card-grid-2{grid-template-columns:1fr;}
+.tier-grid{grid-template-columns:1fr;}
+.pillar-grid{grid-template-columns:1fr 1fr;}
+.work-grid{grid-template-columns:1fr;}
+.insight-grid{grid-template-columns:1fr;}
+.stat-bar{grid-template-columns:1fr 1fr;}
+.footer-grid{grid-template-columns:1fr;}
+.footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+.footer-values{flex-wrap:wrap;justify-content:center;gap:12px;}
+.field-row{grid-template-columns:1fr;}
 
-  /* Steps */
-  .step{grid-template-columns:48px 1fr;gap:20px;}
-  .step-num{font-size:32px;}
+/* Steps */
+.step{grid-template-columns:48px 1fr;gap:20px;}
+.step-num{font-size:32px;}
 
-  /* Movement list */
-  .movement-item{grid-template-columns:40px 1fr;gap:20px;}
-  .mi-arrow{display:none;}
-  .mi-name{font-size:18px;}
+/* Movement list */
+.movement-item{grid-template-columns:40px 1fr;gap:20px;}
+.mi-arrow{display:none;}
+.mi-name{font-size:18px;}
 
-  /* Service rows */
-  .service-row{grid-template-columns:1fr;gap:12px;}
+/* Service rows */
+.service-row{grid-template-columns:1fr;gap:12px;}
 
-  /* Work cards */
-  .work-card{padding:32px 24px;}
+/* Work cards */
+.work-card{padding:32px 24px;}
 
-  /* Form */
-  .form-card{padding:28px 20px;}
+/* Form */
+.form-card{padding:28px 20px;}
 
-  /* CTA band */
-  .cta-band{padding:56px 0;}
-  .cta-band-actions{flex-direction:column;align-items:center;}
+/* CTA band */
+.cta-band{padding:56px 0;}
+.cta-band-actions{flex-direction:column;align-items:center;}
 
-  /* Pullquote */
-  .pullquote-text{font-size:clamp(18px,5vw,26px);}
+/* Pullquote */
+.pullquote-text{font-size:clamp(18px,5vw,26px);}
 
-  /* AI bar */
-  .ai-bar{flex-direction:column;gap:12px;align-items:flex-start;}
+/* AI bar */
+.ai-bar{flex-direction:column;gap:12px;align-items:flex-start;}
 
-  /* Hero homepage specific */
-  h1.hero-headline{font-size:clamp(44px,12vw,72px)!important;}
-  .hero-proof-bar{flex-direction:column;gap:12px;align-items:flex-start;}
-  .hero-badge-inline{font-size:11px;}
+/* Hero homepage specific */
+h1.hero-headline{font-size:clamp(44px,12vw,72px)!important;}
+.hero-proof-bar{flex-direction:column;gap:12px;align-items:flex-start;}
+.hero-badge-inline{font-size:11px;}
 
-  /* Stat bar */
-  .stat-num{font-size:40px;}
+/* Stat bar */
+.stat-num{font-size:40px;}
 
-  /* Page actions */
-  .page-actions{flex-direction:column;}
-  .page-actions a{text-align:center;}
+/* Page actions */
+.page-actions{flex-direction:column;}
+.page-actions a{text-align:center;}
 }
 
 @media(max-width:480px){
-  .pillar-grid{grid-template-columns:1fr;}
-  .stat-bar{grid-template-columns:1fr;}
-  .page-heading{font-size:clamp(34px,10vw,56px);}
-  h1.hero-headline{font-size:clamp(38px,12vw,60px)!important;}
+.pillar-grid{grid-template-columns:1fr;}
+.stat-bar{grid-template-columns:1fr;}
+.page-heading{font-size:clamp(34px,10vw,56px);}
+h1.hero-headline{font-size:clamp(38px,12vw,60px)!important;}
 }
 
 /* ── MOBILE FIXES ── */
 @media(max-width:768px){
-  /* Force burger visible */
-  button.nav-burger{
-    display:flex!important;
-    flex-direction:column;
-    justify-content:center;
-    gap:5px;
-    cursor:pointer;
-    padding:10px 8px;
-    background:none;
-    border:none;
-    min-width:44px;
-    min-height:44px;
-    z-index:200;
-  }
-  button.nav-burger span{
-    display:block!important;
-    width:24px;
-    height:2px;
-    background:#fff;
-    border-radius:2px;
-    transition:transform .3s,opacity .3s;
-  }
-  /* Nav always has bg on mobile so burger is visible */
-  nav{background:rgba(20,20,20,.97)!important;backdrop-filter:blur(16px);}
+/* Force burger visible */
+button.nav-burger{
+display:flex!important;
+flex-direction:column;
+justify-content:center;
+gap:5px;
+cursor:pointer;
+padding:10px 8px;
+background:none;
+border:none;
+min-width:44px;
+min-height:44px;
+z-index:200;
+}
+button.nav-burger span{
+display:block!important;
+width:24px;
+height:2px;
+background:#fff;
+border-radius:2px;
+transition:transform .3s,opacity .3s;
+}
+/* Nav always has bg on mobile so burger is visible */
+nav{background:rgba(20,20,20,.97)!important;backdrop-filter:blur(16px);}
 
-  /* Tighter page header — reduce the dead space */
-  .page-header{
-    padding:calc(var(--ticker-h) + var(--nav-h) + 24px) 0 40px!important;
-  }
+/* Tighter page header — reduce the dead space */
+.page-header{
+padding:calc(var(--ticker-h) + var(--nav-h) + 24px) 0 40px!important;
+}
 }
 </style><link rel="canonical" href="https://lovelandbranddesign.com/insights"><meta property="og:type" content="website"><meta property="og:site_name" content="Loveland Brand Design"><meta property="og:locale" content="en_US"><meta property="og:title" content="Insights | Loveland Brand Design"><meta property="og:description" content="Strategy frameworks, system thinking, and honest takes on what works in marketing for businesses doing real work."><meta property="og:url" content="https://lovelandbranddesign.com/insights"><meta property="og:image" content="https://lovelandbranddesign.com/assets/images/og/insights_that_cut_through_noise.png"><meta property="og:image:width" content="1731"><meta property="og:image:height" content="909"><meta property="og:image:alt" content="Insights that cut through the noise."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Insights | Loveland Brand Design"><meta name="twitter:description" content="Strategy frameworks, system thinking, and honest takes on what works in marketing for businesses doing real work."><meta name="twitter:image" content="https://lovelandbranddesign.com/assets/images/og/insights_that_cut_through_noise.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://lovelandbranddesign.com/#organization","name":"Loveland Brand Design LLC","alternateName":"LBD","url":"https://lovelandbranddesign.com/","logo":"https://lovelandbranddesign.com/assets/images/lbd-link-preview.png","image":"https://lovelandbranddesign.com/assets/images/lbd-link-preview.png","description":"AI-powered marketing systems for businesses doing work worth defending. Fixed scope, fixed fee, no hourly billing.","email":"info@lovelandbranddesign.com","telephone":"+1-617-686-5618","founder":{"@type":"Person","name":"Aaron Loveland","sameAs":["https://www.linkedin.com/in/aaronloveland/"]},"address":{"@type":"PostalAddress","streetAddress":"113 6th Street","addressLocality":"Pikeville","addressRegion":"KY","postalCode":"41501","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.4793,"longitude":-82.5188},"areaServed":[{"@type":"State","name":"Kentucky"},{"@type":"Country","name":"United States"}],"sameAs":["https://www.linkedin.com/in/aaronloveland/"],"priceRange":"$$"}</script><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/assets/favicon/lbd-mark-black.svg"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#2E2E2E"></head><body><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TJVTCR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) --><div class="ticker" aria-hidden="true"><div class="ticker-track">
 <span class="ticker-item">Custom Strategy</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
@@ -481,95 +481,95 @@ footer{background:var(--black);padding:80px 0 40px;}
 <span class="ticker-item">AI-Integrated Growth</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
 <span class="ticker-item">Systems That Give You Your Bandwidth Back</span>
 </div></div><nav id="mainNav"><div class="nav-inner">
-  <a href="/" class="nav-logo-svg">
-    <span class="nav-logo-wordmark">LOVELAND<span class="nav-logo-dot">.</span></span>
-    <span class="nav-logo-sub">Brand Design</span>
-  </a>
-  <ul class="nav-links">
-    <li><a href="/about">About</a></li>
-    <li><a href="/work">Our Work</a></li>
-    <li class="nav-dropdown">
-      <a href="/solutions">Solutions</a>
-      <div class="nav-drop-menu">
-        <span class="nav-drop-label">Seven Movements</span>
-        <a href="/solutions/marketing-action-plan" class="nav-drop-item">Marketing Action Plan</a>
-        <a href="/solutions/brand-architecture" class="nav-drop-item">Brand Architecture</a>
-        <a href="/solutions/digital-ecosystem" class="nav-drop-item">Digital Ecosystem</a>
-        <a href="/solutions/marketing-operations" class="nav-drop-item">Marketing Operations</a>
-        <a href="/solutions/content-and-social" class="nav-drop-item">Content and Social</a>
-        <a href="/solutions/prospecting-and-pipeline" class="nav-drop-item">Prospecting and Pipeline</a>
-        <a href="/solutions/digital-advertising" class="nav-drop-item">Digital Advertising</a>
-        <div class="nav-drop-divider"></div>
-        <a href="/solutions" class="nav-drop-item accent">View All Solutions</a>
-      </div>
-    </li>
-    <li class="nav-dropdown">
-      <a href="/insights" class="active">Resources</a>
-      <div class="nav-drop-menu">
-        <a href="/insights" class="nav-drop-item">Insights</a>
-        <a href="/faqs" class="nav-drop-item">FAQs</a>
-        <a href="/15-pillars-of-digital-marketing-health" class="nav-drop-item">15 Pillars</a>
-        <div class="nav-drop-divider"></div>
-        <a href="/eky" class="nav-drop-item">Eastern Kentucky</a>
-      </div>
-    </li>
-    <li><a href="/approach">Approach</a></li>
-    <li><a href="/contact">Contact</a></li>
-    <li><span class="nav-phone">617.686.5618</span></li>
-  </ul>
-  <button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  <a href="/contact" class="nav-cta">Start My MAP</a>
-</div></nav><section class="page-header"><div class="container ph-max"><div class="eyebrow ew-teal reveal">Insights</div><h1 class="page-heading reveal">What we know.<br><span class="at">What we have learned.</span><br>What you can use.</h1><p class="page-sub reveal">Strategy frameworks, system thinking, and honest takes on what works in marketing for businesses doing real work.</p></div></section><section class="s-darker"><div class="container reveal"><div class="insight-grid"><a href="/insights/how-to-tell-if-content-was-written-by-ai" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">How to Tell If Content Was Written by AI</div><p class="insight-excerpt">AI detection tools are provably unreliable. Here are the real signals that actually work, and what Google's own guidelines say about AI-generated content.</p><div class="insight-meta">September 1, 2026</div></a><a href="/insights/we-audited-12-small-business-websites" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">We Audited 12 Small Business Websites for AI Slop</div><p class="insight-excerpt">We scored twelve real small business websites against the five-pattern AI slop framework. Budget did not predict the score. Specificity did.</p><div class="insight-meta">August 25, 2026</div></a><a href="/insights/what-is-ai-slop" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">What Is AI Slop?</div><p class="insight-excerpt">AI slop is content generic enough to describe any business. What it actually means, why it erodes trust, and what real specificity looks like instead.</p><div class="insight-meta">August 18, 2026</div></a></div></div></section><div class="cta-band"><div class="container"><h2 class="cta-band-heading">Ready to start building?</h2><p class="cta-band-sub">The MAP is where it starts. Strategy before execution, every time.</p><div class="cta-band-actions"><a href="/contact" class="btn-white">Start My MAP</a><a href="/faqs" class="btn-ghost" style="border-color:rgba(255,255,255,.35);color:var(--white);">Read the FAQs</a></div></div></div><footer><div class="container">
-  <div class="footer-grid">
-    <div>
-      <div class="footer-logo-svg">
-        <span class="footer-logo-wordmark">LOVELAND<span class="footer-logo-dot">.</span></span>
-        <span class="footer-logo-sub">Brand Design</span>
-      </div>
-      <p class="footer-tagline">AI-powered marketing systems for businesses doing work worth defending.</p>
-      <div class="footer-contact">
-        <a href="tel:6176865618">617.686.5618</a>
-        <a href="mailto:info@lovelandbranddesign.com">info@lovelandbranddesign.com</a>
-        <a href="#">Pikeville, Kentucky</a>
-      </div>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-label">Solutions</div>
-      <ul>
-        <li><a href="/solutions/marketing-action-plan">Marketing Action Plan</a></li>
-        <li><a href="/solutions/brand-architecture">Brand Architecture</a></li>
-        <li><a href="/solutions/digital-ecosystem">Digital Ecosystem</a></li>
-        <li><a href="/solutions/marketing-operations">Marketing Operations</a></li>
-        <li><a href="/solutions/content-and-social">Content and Social</a></li>
-        <li><a href="/solutions/prospecting-and-pipeline">Prospecting and Pipeline</a></li>
-        <li><a href="/solutions/digital-advertising">Digital Advertising</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-label">Company</div>
-      <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/approach">Approach</a></li>
-        <li><a href="/work">Our Work</a></li>
-        <li><a href="/faqs">FAQs</a></li>
-        <li><a href="/insights">Insights</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <div class="footer-col-label">Start Here</div>
-      <ul>
-        <li><a href="/contact">Start My MAP</a></li>
-        <li><a href="mailto:info@lovelandbranddesign.com">Send an Email</a></li>
-        <li><a href="tel:6176865618">Call Us</a></li>
-        <li><a href="/privacy">Privacy Policy</a></li>
-        <li><a href="/terms">Terms of Service</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="footer-copy">© 2026 Loveland Brand Design LLC. Pikeville, Kentucky.</div>
-    <ul class="footer-values"><li>Simplicity</li><li>Systems</li><li>Fit</li><li>Freedom</li><li>Honesty</li></ul>
-  </div>
+<a href="/" class="nav-logo-svg">
+<span class="nav-logo-wordmark">LOVELAND<span class="nav-logo-dot">.</span></span>
+<span class="nav-logo-sub">Brand Design</span>
+</a>
+<ul class="nav-links">
+<li><a href="/about">About</a></li>
+<li><a href="/work">Our Work</a></li>
+<li class="nav-dropdown">
+<a href="/solutions">Solutions</a>
+<div class="nav-drop-menu">
+<span class="nav-drop-label">Seven Movements</span>
+<a href="/solutions/marketing-action-plan" class="nav-drop-item">Marketing Action Plan</a>
+<a href="/solutions/brand-architecture" class="nav-drop-item">Brand Architecture</a>
+<a href="/solutions/digital-ecosystem" class="nav-drop-item">Digital Ecosystem</a>
+<a href="/solutions/marketing-operations" class="nav-drop-item">Marketing Operations</a>
+<a href="/solutions/content-and-social" class="nav-drop-item">Content and Social</a>
+<a href="/solutions/prospecting-and-pipeline" class="nav-drop-item">Prospecting and Pipeline</a>
+<a href="/solutions/digital-advertising" class="nav-drop-item">Digital Advertising</a>
+<div class="nav-drop-divider"></div>
+<a href="/solutions" class="nav-drop-item accent">View All Solutions</a>
+</div>
+</li>
+<li class="nav-dropdown">
+<a href="/insights" class="active">Resources</a>
+<div class="nav-drop-menu">
+<a href="/insights" class="nav-drop-item">Insights</a>
+<a href="/faqs" class="nav-drop-item">FAQs</a>
+<a href="/15-pillars-of-digital-marketing-health" class="nav-drop-item">15 Pillars</a>
+<div class="nav-drop-divider"></div>
+<a href="/eky" class="nav-drop-item">Eastern Kentucky</a>
+</div>
+</li>
+<li><a href="/approach">Approach</a></li>
+<li><a href="/contact">Contact</a></li>
+<li><span class="nav-phone">617.686.5618</span></li>
+</ul>
+<button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
+<a href="/contact" class="nav-cta">Start My MAP</a>
+</div></nav><section class="page-header"><div class="container ph-max"><div class="eyebrow ew-teal reveal">Insights</div><h1 class="page-heading reveal">What we know.<br><span class="at">What we have learned.</span><br>What you can use.</h1><p class="page-sub reveal">Strategy frameworks, system thinking, and honest takes on what works in marketing for businesses doing real work.</p></div></section><section class="s-darker"><div class="container reveal"><div class="insight-grid"><a href="/insights/is-ai-generated-content-bad-for-seo" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">Is AI-Generated Content Bad for SEO in 2026?</div><p class="insight-excerpt">Google does not penalize content for being AI-written, but the March 2026 Core Update tells a sharper story. A practitioner Q&amp;A on what actually happened.</p><div class="insight-meta">September 8, 2026</div></a><a href="/insights/how-to-tell-if-content-was-written-by-ai" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">How to Tell If Content Was Written by AI</div><p class="insight-excerpt">AI detection tools are provably unreliable. Here are the real signals that actually work, and what Google's own guidelines say about AI-generated content.</p><div class="insight-meta">September 1, 2026</div></a><a href="/insights/we-audited-12-small-business-websites" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">We Audited 12 Small Business Websites for AI Slop</div><p class="insight-excerpt">We scored twelve real small business websites against the five-pattern AI slop framework. Budget did not predict the score. Specificity did.</p><div class="insight-meta">August 25, 2026</div></a><a href="/insights/what-is-ai-slop" class="insight-card"><div class="insight-cat">AI</div><div class="insight-title">What Is AI Slop?</div><p class="insight-excerpt">AI slop is content generic enough to describe any business. What it actually means, why it erodes trust, and what real specificity looks like instead.</p><div class="insight-meta">August 18, 2026</div></a></div></div></section><div class="cta-band"><div class="container"><h2 class="cta-band-heading">Ready to start building?</h2><p class="cta-band-sub">The MAP is where it starts. Strategy before execution, every time.</p><div class="cta-band-actions"><a href="/contact" class="btn-white">Start My MAP</a><a href="/faqs" class="btn-ghost" style="border-color:rgba(255,255,255,.35);color:var(--white);">Read the FAQs</a></div></div></div><footer><div class="container">
+<div class="footer-grid">
+<div>
+<div class="footer-logo-svg">
+<span class="footer-logo-wordmark">LOVELAND<span class="footer-logo-dot">.</span></span>
+<span class="footer-logo-sub">Brand Design</span>
+</div>
+<p class="footer-tagline">AI-powered marketing systems for businesses doing work worth defending.</p>
+<div class="footer-contact">
+<a href="tel:6176865618">617.686.5618</a>
+<a href="mailto:info@lovelandbranddesign.com">info@lovelandbranddesign.com</a>
+<a href="#">Pikeville, Kentucky</a>
+</div>
+</div>
+<div class="footer-col">
+<div class="footer-col-label">Solutions</div>
+<ul>
+<li><a href="/solutions/marketing-action-plan">Marketing Action Plan</a></li>
+<li><a href="/solutions/brand-architecture">Brand Architecture</a></li>
+<li><a href="/solutions/digital-ecosystem">Digital Ecosystem</a></li>
+<li><a href="/solutions/marketing-operations">Marketing Operations</a></li>
+<li><a href="/solutions/content-and-social">Content and Social</a></li>
+<li><a href="/solutions/prospecting-and-pipeline">Prospecting and Pipeline</a></li>
+<li><a href="/solutions/digital-advertising">Digital Advertising</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<div class="footer-col-label">Company</div>
+<ul>
+<li><a href="/about">About</a></li>
+<li><a href="/approach">Approach</a></li>
+<li><a href="/work">Our Work</a></li>
+<li><a href="/faqs">FAQs</a></li>
+<li><a href="/insights">Insights</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<div class="footer-col-label">Start Here</div>
+<ul>
+<li><a href="/contact">Start My MAP</a></li>
+<li><a href="mailto:info@lovelandbranddesign.com">Send an Email</a></li>
+<li><a href="tel:6176865618">Call Us</a></li>
+<li><a href="/privacy">Privacy Policy</a></li>
+<li><a href="/terms">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="footer-copy">© 2026 Loveland Brand Design LLC. Pikeville, Kentucky.</div>
+<ul class="footer-values"><li>Simplicity</li><li>Systems</li><li>Fit</li><li>Freedom</li><li>Honesty</li></ul>
+</div>
 </div></footer><script>
 // Scroll nav
 const nav=document.getElementById('mainNav');
@@ -583,26 +583,26 @@ document.querySelectorAll('.faq-q').forEach(q=>{q.addEventListener('click',()=>{
 const burger=document.getElementById('navBurger');
 const navLinks=document.querySelector('.nav-links');
 if(burger&&navLinks){
-  burger.addEventListener('click',()=>{burger.classList.toggle('open');navLinks.classList.toggle('open');});
-  navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{a.addEventListener('click',()=>{burger.classList.remove('open');navLinks.classList.remove('open');});});
+burger.addEventListener('click',()=>{burger.classList.toggle('open');navLinks.classList.toggle('open');});
+navLinks.querySelectorAll('a:not(.nav-drop-item)').forEach(a=>{a.addEventListener('click',()=>{burger.classList.remove('open');navLinks.classList.remove('open');});});
 }
 // Dropdown nav — click-based for reliability
 document.querySelectorAll('.nav-dropdown > a').forEach(function(trigger){
-  trigger.addEventListener('click',function(e){
-    var isMobile = window.innerWidth <= 768;
-    if(!isMobile){
-      e.preventDefault(); e.stopPropagation();
-      var menu = this.nextElementSibling;
-      var isOpen = menu.classList.contains('open');
-      document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
-      if(!isOpen) menu.classList.add('open');
-    }
-  });
+trigger.addEventListener('click',function(e){
+var isMobile = window.innerWidth <= 768;
+if(!isMobile){
+e.preventDefault(); e.stopPropagation();
+var menu = this.nextElementSibling;
+var isOpen = menu.classList.contains('open');
+document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
+if(!isOpen) menu.classList.add('open');
+}
+});
 });
 document.addEventListener('click',function(e){
-  if(!e.target.closest('.nav-dropdown')){
-    document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
-  }
+if(!e.target.closest('.nav-dropdown')){
+document.querySelectorAll('.nav-drop-menu').forEach(function(m){m.classList.remove('open');});
+}
 });
 // Netlify Identity
 if(window.netlifyIdentity){window.netlifyIdentity.on('init',function(u){if(!u){window.netlifyIdentity.on('login',function(){document.location.href='/admin/';});}});}
