@@ -61,6 +61,11 @@
   status = 200
 
 [[redirects]]
+  from = "/google-ad-grants-thank-you"
+  to = "/google-ad-grants-thank-you.html"
+  status = 200
+
+[[redirects]]
   from = "/work"
   to = "/work/index.html"
   status = 200
