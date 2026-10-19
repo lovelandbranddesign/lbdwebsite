@@ -85,7 +85,8 @@ NAV = """<nav id="mainNav"><div class="nav-inner">
       <div class="nav-drop-menu">
         <a href="/insights" class="nav-drop-item">Insights</a>
         <a href="/faqs" class="nav-drop-item">FAQs</a>
-        <a href="/12-pillars-of-digital-marketing-health" class="nav-drop-item">12 Pillars</a>
+        <a href="/15-pillars-of-digital-marketing-health" class="nav-drop-item">15 Pillars</a>
+        <a href="/google-ad-grants-for-nonprofits" class="nav-drop-item">Google Ad Grants</a>
         <div class="nav-drop-divider"></div>
         <a href="/eky" class="nav-drop-item">Eastern Kentucky</a>
       </div>

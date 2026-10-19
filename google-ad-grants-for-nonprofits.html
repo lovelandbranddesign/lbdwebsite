@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9TJVTCR');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Google Ad Grants for Nonprofits | Loveland Brand Design</title>
+<meta name="description" content="Eligible nonprofits can receive up to $10,000 a month in Google Search ads. Loveland Brand Design applies, sets up and manages your account.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --orange:#FD4F00; --orange-dark:#C93D00;
+  --charcoal:#2E2E2E; --charcoal-dk:#1C1C1C;
+  --beige:#F5F5F5; --mid-grey:#8A8A8A;
+  --teal:#053343; --teal-mid:#0A5568;
+  --teal-light:#0D7A8F; --teal-dark:#032530;
+  --gold:#D1A046; --gold-light:#E4BE7A;
+  --white:#FFFFFF; --black:#0A0A0A;
+  --font-display:'Barlow Condensed',sans-serif;
+  --font-body:'Inter',sans-serif;
+  --nav-h:72px; --ticker-h:40px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--font-body);background:var(--charcoal);color:var(--beige);-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+img{display:block;max-width:100%;}
+a{color:inherit;text-decoration:none;}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 48px;}
+
+/* TICKER */
+.ticker{background:var(--orange);height:var(--ticker-h);overflow:hidden;display:flex;align-items:center;position:fixed;top:0;left:0;right:0;z-index:200;}
+.ticker-track{display:flex;white-space:nowrap;animation:tick 38s linear infinite;}
+.ticker-item{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--white);padding:0 40px;}
+.ticker-sep{color:rgba(255,255,255,.4);align-self:center;}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* NAV */
+nav{position:fixed;top:var(--ticker-h);left:0;right:0;z-index:100;height:var(--nav-h);display:flex;align-items:center;transition:background .3s,backdrop-filter .3s;}
+nav.scrolled{background:rgba(26,26,26,.97);backdrop-filter:blur(16px);}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:1280px;margin:0 auto;padding:0 48px;}
+.nav-logo-svg{display:flex;align-items:center;line-height:1;}
+.nav-logo-wordmark{font-family:var(--font-display);font-size:26px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--white);}
+.nav-logo-dot{color:var(--orange);}
+.nav-logo-sub{font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-left:8px;align-self:flex-end;padding-bottom:3px;}
+.nav-links{display:flex;align-items:center;gap:36px;list-style:none;}
+.nav-links a{font-family:var(--font-display);font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,245,245,.65);transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--white);}
+.nav-phone{font-size:13px;color:var(--mid-grey);}
+.nav-cta{background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:11px 22px;transition:background .2s;white-space:nowrap;}
+.nav-cta:hover{background:var(--orange-dark);}
+
+/* BUTTONS */
+.btn-primary{display:inline-block;background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px 40px;border:none;cursor:pointer;transition:background .2s,transform .15s;}
+.btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px);}
+.btn-ghost{display:inline-block;background:transparent;color:var(--beige);font-family:var(--font-display);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:15px 40px;border:1px solid rgba(245,245,245,.2);cursor:pointer;transition:border-color .2s,color .2s;}
+.btn-ghost:hover{border-color:var(--teal-light);color:var(--teal-light);}
+.btn-teal{display:inline-block;background:var(--teal-mid);color:var(--white);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px 40px;transition:background .2s;}
+.btn-teal:hover{background:var(--teal-light);}
+.btn-white{display:inline-block;background:var(--white);color:var(--charcoal);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px 40px;transition:background .2s;}
+.btn-white:hover{background:var(--beige);}
+
+/* EYEBROW */
+.eyebrow{display:flex;align-items:center;gap:12px;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px;}
+.eyebrow::before{content:'';display:block;width:24px;height:1px;flex-shrink:0;background:currentColor;}
+.ew-teal{color:var(--teal-light);} .ew-gold{color:var(--gold);} .ew-grey{color:var(--mid-grey);}
+.ew-white{color:rgba(255,255,255,.45);} .ew-orange{color:var(--orange);}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* PAGE HEADER */
+.page-header{padding:calc(var(--ticker-h) + var(--nav-h) + 80px) 0 80px;background:var(--charcoal-dk);border-bottom:1px solid rgba(245,245,245,.06);}
+.page-header.teal-dark{background:var(--teal-dark);}
+.page-header.teal{background:var(--teal);}
+.ph-max{max-width:820px;}
+.page-heading{font-family:var(--font-display);font-size:clamp(48px,5.5vw,82px);font-weight:900;text-transform:uppercase;line-height:.93;color:var(--beige);letter-spacing:-.01em;margin-bottom:28px;}
+.page-heading .ao{color:var(--orange);} .page-heading .at{color:var(--teal-light);} .page-heading .ag{color:var(--gold);}
+.page-sub{font-size:17px;line-height:1.65;color:rgba(245,245,245,.6);max-width:580px;margin-bottom:36px;}
+.page-actions{display:flex;gap:16px;flex-wrap:wrap;}
+
+/* SECTIONS */
+.s-dark{background:var(--charcoal);padding:96px 0;}
+.s-darker{background:var(--charcoal-dk);padding:96px 0;}
+.s-teal{background:var(--teal);padding:96px 0;}
+.s-teal-dark{background:var(--teal-dark);padding:96px 0;}
+.s-light{background:var(--beige);color:var(--charcoal);padding:96px 0;}
+.s-orange{background:var(--orange);padding:64px 0;}
+.s-top{padding-top:0;}
+
+/* TYPOGRAPHY */
+.section-heading{font-family:var(--font-display);font-size:clamp(36px,4vw,60px);font-weight:900;text-transform:uppercase;line-height:.95;letter-spacing:-.01em;margin-bottom:28px;color:var(--beige);}
+.section-heading.dark{color:var(--charcoal);}
+.section-heading .ao{color:var(--orange);} .section-heading .at{color:var(--teal-light);} .section-heading .ag{color:var(--gold);}
+.prose{font-size:16px;line-height:1.75;color:rgba(245,245,245,.65);max-width:640px;}
+.prose.dark{color:rgba(46,46,46,.72);}
+.prose p{margin-bottom:18px;}
+.prose p:last-child{margin-bottom:0;}
+.prose strong{color:var(--beige);font-weight:500;}
+.prose.dark strong{color:var(--charcoal);}
+
+/* GRID LAYOUTS */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;}
+.two-col.center{align-items:center;}
+.three-col{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.four-col{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin-top:56px;}
+.sidebar-left{display:grid;grid-template-columns:340px 1fr;gap:88px;align-items:start;}
+
+/* CARDS */
+.card{background:rgba(245,245,245,.04);padding:36px 28px;transition:background .2s;}
+.card:hover{background:rgba(245,245,245,.07);}
+.card.light{background:rgba(46,46,46,.05);}
+.card.light:hover{background:rgba(46,46,46,.09);}
+.card.bordered-o{border-top:3px solid var(--orange);}
+.card.bordered-t{border-top:3px solid var(--teal-light);}
+.card.bordered-g{border-top:3px solid var(--gold);}
+.card-num{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;color:var(--mid-grey);margin-bottom:14px;}
+.card-title{font-family:var(--font-display);font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:.03em;color:var(--beige);margin-bottom:10px;}
+.card-title.dark{color:var(--charcoal);}
+.card-body{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);}
+.card-body.dark{color:rgba(46,46,46,.6);}
+.card-link{display:inline-block;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);margin-top:18px;transition:color .2s;}
+.card-link:hover{color:var(--orange-dark);}
+.card-link.teal{color:var(--teal-light);}
+
+/* FEATURE LIST */
+.feature-list{list-style:none;display:flex;flex-direction:column;gap:14px;margin-top:24px;}
+.feature-list li{display:flex;align-items:flex-start;gap:14px;font-size:15px;line-height:1.5;color:rgba(245,245,245,.7);}
+.feature-list li.dark{color:rgba(46,46,46,.72);}
+.feature-list li::before{content:'→';color:var(--orange);font-family:var(--font-display);font-weight:700;flex-shrink:0;margin-top:2px;}
+.feature-list li.t::before{color:var(--teal-light);}
+.feature-list li.g::before{color:var(--gold);}
+
+/* SERVICE ROW */
+.service-row{display:grid;grid-template-columns:280px 1fr 160px;gap:48px;align-items:start;padding:44px 0;border-top:1px solid rgba(245,245,245,.07);}
+.service-row:last-child{border-bottom:1px solid rgba(245,245,245,.07);}
+.service-row.light{border-top-color:rgba(46,46,46,.1);}
+.service-row.light:last-child{border-bottom-color:rgba(46,46,46,.1);}
+.service-name{font-family:var(--font-display);font-size:20px;font-weight:900;text-transform:uppercase;color:var(--beige);margin-bottom:4px;}
+.service-name.dark{color:var(--charcoal);}
+.service-tag{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mid-grey);}
+.service-desc{font-size:14px;line-height:1.7;color:rgba(245,245,245,.55);}
+.service-desc.dark{color:rgba(46,46,46,.65);}
+
+/* MOVEMENT LIST */
+.movement-list{margin-top:48px;}
+.movement-item{display:grid;grid-template-columns:64px 1fr auto;gap:32px;align-items:center;padding:36px 0;border-top:1px solid rgba(245,245,245,.07);text-decoration:none;}
+.movement-item:last-child{border-bottom:1px solid rgba(245,245,245,.07);}
+.movement-item:hover .mi-name{color:var(--orange);}
+.movement-item:hover .mi-arrow{color:var(--orange);transform:translateX(4px);}
+.mi-num{font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--mid-grey);}
+.mi-name{font-family:var(--font-display);font-size:22px;font-weight:900;text-transform:uppercase;color:var(--beige);transition:color .2s;}
+.mi-desc{font-size:14px;line-height:1.55;color:rgba(245,245,245,.45);margin-top:6px;max-width:560px;}
+.mi-arrow{font-size:22px;color:var(--mid-grey);transition:color .2s,transform .2s;}
+
+/* FAQ */
+.faq-group-label{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--teal-light);margin:56px 0 0;display:block;}
+.faq-group-label:first-child{margin-top:0;}
+.faq-list{margin-top:0;}
+.faq-item{border-top:1px solid rgba(245,245,245,.08);}
+.faq-item:last-child{border-bottom:1px solid rgba(245,245,245,.08);}
+.faq-q{font-family:var(--font-display);font-size:17px;font-weight:700;text-transform:uppercase;letter-spacing:.02em;color:var(--beige);padding:22px 0;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:24px;user-select:none;}
+.faq-q::after{content:'+';font-size:24px;font-weight:300;color:var(--teal-light);flex-shrink:0;transition:transform .25s;}
+.faq-item.open .faq-q::after{transform:rotate(45deg);}
+.faq-a{font-size:15px;line-height:1.75;color:rgba(245,245,245,.6);max-height:0;overflow:hidden;transition:max-height .35s ease,padding .25s;}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:28px;}
+.faq-a strong{color:var(--beige);}
+
+/* WORK GRID */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.work-card{background:rgba(245,245,245,.04);padding:44px 36px;border-top:3px solid transparent;transition:background .2s;}
+.work-card:hover{background:rgba(245,245,245,.07);}
+.work-card.ac-o{border-top-color:var(--orange);}
+.work-card.ac-t{border-top-color:var(--teal-light);}
+.work-card.ac-g{border-top-color:var(--gold);}
+.work-industry{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:12px;}
+.work-client{font-family:var(--font-display);font-size:24px;font-weight:900;text-transform:uppercase;color:var(--beige);margin-bottom:12px;}
+.work-desc{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);margin-bottom:20px;}
+.work-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px;}
+.work-tag{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mid-grey);border:1px solid rgba(245,245,245,.1);padding:5px 10px;}
+.work-status{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-light);}
+
+/* PLACEHOLDER */
+.placeholder-block{background:rgba(245,245,245,.03);border:1px dashed rgba(245,245,245,.12);padding:80px 40px;text-align:center;margin-top:48px;}
+.placeholder-label{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:12px;}
+.placeholder-text{font-size:15px;color:rgba(245,245,245,.3);}
+
+/* PILLAR GRID */
+.pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.pillar-card{background:rgba(245,245,245,.04);padding:32px 28px;}
+.pillar-num{font-family:var(--font-display);font-size:40px;font-weight:900;line-height:1;color:var(--orange);margin-bottom:12px;}
+.pillar-num.t{color:var(--teal-light);} .pillar-num.g{color:var(--gold);}
+.pillar-title{font-family:var(--font-display);font-size:16px;font-weight:800;text-transform:uppercase;color:var(--beige);margin-bottom:10px;}
+.pillar-body{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);}
+
+/* FORM */
+.form-card{background:rgba(0,0,0,.22);border:1px solid rgba(255,255,255,.09);padding:44px;}
+.form-heading{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;color:var(--white);margin-bottom:5px;}
+.form-sub{font-size:13px;color:rgba(255,255,255,.4);margin-bottom:28px;}
+.field{margin-bottom:16px;}
+.field label{display:block;font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.38);margin-bottom:7px;}
+.field input,.field textarea,.field select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:var(--white);font-family:var(--font-body);font-size:14px;padding:12px 14px;outline:none;border-radius:0;-webkit-appearance:none;transition:border-color .2s;}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238A8A8A' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:36px;cursor:pointer;}
+.field select option{background:#1C1C1C;color:var(--white);}
+.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--teal-light);}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.22);}
+.field textarea{resize:vertical;min-height:100px;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.form-submit{width:100%;background:var(--orange);color:var(--white);font-family:var(--font-display);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:16px;border:none;cursor:pointer;margin-top:6px;transition:background .2s;}
+.form-submit:hover{background:var(--orange-dark);}
+
+/* STAT BAR */
+.stat-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(245,245,245,.06);margin-top:64px;}
+.stat-item{background:var(--charcoal-dk);padding:32px 28px;}
+.stat-num{font-family:var(--font-display);font-size:52px;font-weight:900;line-height:1;color:var(--orange);margin-bottom:6px;}
+.stat-label{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--mid-grey);}
+
+/* CTA BAND */
+.cta-band{background:var(--teal-dark);padding:80px 0;text-align:center;}
+.cta-band.orange{background:var(--orange);}
+.cta-band-heading{font-family:var(--font-display);font-size:clamp(28px,3vw,46px);font-weight:900;text-transform:uppercase;color:var(--white);margin-bottom:12px;}
+.cta-band-sub{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:32px;max-width:480px;margin-left:auto;margin-right:auto;}
+.cta-band-actions{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;}
+
+/* PULLQUOTE */
+.pullquote{border-left:3px solid var(--orange);padding-left:24px;margin:40px 0;}
+.pullquote-text{font-family:var(--font-display);font-size:clamp(22px,2.5vw,32px);font-weight:900;text-transform:uppercase;line-height:1.05;color:var(--beige);margin-bottom:12px;}
+.pullquote-attr{font-size:12px;color:var(--mid-grey);}
+
+/* APPROACH STEPS */
+.step-list{display:flex;flex-direction:column;gap:0;}
+.step{display:grid;grid-template-columns:64px 1fr;gap:32px;align-items:start;padding:40px 0;border-top:1px solid rgba(245,245,245,.07);}
+.step:last-child{border-bottom:1px solid rgba(245,245,245,.07);}
+.step-num{font-family:var(--font-display);font-size:40px;font-weight:900;line-height:1;color:var(--orange);}
+.step-name{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;color:var(--beige);margin-bottom:10px;}
+.step-desc{font-size:14px;line-height:1.7;color:rgba(245,245,245,.55);}
+
+/* AI BAR */
+.ai-bar{background:var(--teal);padding:22px 36px;display:flex;align-items:center;justify-content:space-between;margin-bottom:2px;}
+.ai-bar-eyebrow{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:4px;}
+.ai-bar-name{font-family:var(--font-display);font-size:20px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--white);}
+.ai-bar-right{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.35);}
+
+/* FOOTER */
+footer{background:var(--black);padding:80px 0 40px;}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;padding-bottom:56px;border-bottom:1px solid rgba(245,245,245,.07);margin-bottom:32px;}
+.footer-logo-svg{display:flex;align-items:baseline;gap:0;margin-bottom:18px;}
+.footer-logo-wordmark{font-family:var(--font-display);font-size:22px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;color:var(--white);}
+.footer-logo-dot{color:var(--orange);}
+.footer-logo-sub{font-family:var(--font-display);font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-left:7px;}
+.footer-tagline{font-size:13px;line-height:1.65;color:rgba(245,245,245,.35);max-width:240px;margin-bottom:18px;}
+.footer-contact a{display:block;font-size:13px;color:rgba(245,245,245,.42);margin-bottom:5px;transition:color .2s;}
+.footer-contact a:hover{color:var(--teal-light);}
+.footer-col-label{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--mid-grey);margin-bottom:20px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px;}
+.footer-col ul a{font-size:13px;color:rgba(245,245,245,.38);transition:color .2s;}
+.footer-col ul a:hover{color:var(--white);}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;}
+.footer-copy{font-size:11px;color:rgba(245,245,245,.2);}
+.footer-values{list-style:none;display:flex;gap:20px;}
+.footer-values li{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(245,245,245,.14);}
+
+/* INSIGHT CARDS */
+.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:56px;}
+.insight-card{background:rgba(245,245,245,.04);padding:36px 28px;transition:background .2s;}
+.insight-card:hover{background:rgba(245,245,245,.07);}
+.insight-cat{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-light);margin-bottom:12px;}
+.insight-title{font-family:var(--font-display);font-size:20px;font-weight:800;text-transform:uppercase;color:var(--beige);margin-bottom:12px;line-height:1.1;}
+.insight-excerpt{font-size:13px;line-height:1.65;color:rgba(245,245,245,.45);margin-bottom:20px;}
+.insight-meta{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mid-grey);}
+
+/* RESPONSIVE */
+@media(max-width:960px){
+  .container{padding:0 28px;}
+  .nav-inner{padding:0 28px;}
+  .two-col,.sidebar-left{grid-template-columns:1fr;gap:48px;}
+  .three-col{grid-template-columns:repeat(2,1fr);}
+  .four-col{grid-template-columns:repeat(2,1fr);}
+  .pillar-grid{grid-template-columns:repeat(2,1fr);}
+  .work-grid{grid-template-columns:repeat(2,1fr);}
+  .insight-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-grid{grid-template-columns:1fr 1fr;}
+  .stat-bar{grid-template-columns:repeat(2,1fr);}
+  .service-row{grid-template-columns:1fr;gap:16px;}
+  .movement-item{grid-template-columns:48px 1fr;} .mi-arrow{display:none;}
+  .field-row{grid-template-columns:1fr;}
+}
+@media(max-width:600px){
+  .nav-links,.nav-phone{display:none;}
+  .three-col,.four-col,.pillar-grid,.work-grid,.insight-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+  .stat-bar{grid-template-columns:1fr;}
+}
+
+.nav-dropdown { position: relative; }
+.nav-dropdown > a::after { content: ' ▾'; font-size: 9px; opacity: .5; }
+.nav-drop-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 2px);
+  left: -16px;
+  background: rgba(20,20,20,.98);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(245,245,245,.09);
+  min-width: 230px;
+  padding: 8px 0;
+  z-index: 300;
+}
+.nav-dropdown:hover .nav-drop-menu { display: block; }
+.nav-drop-item {
+  display: block;
+  padding: 11px 20px;
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,.52);
+  transition: color .15s, background .15s;
+  white-space: nowrap;
+}
+.nav-drop-item:hover { color: var(--white); background: rgba(245,245,245,.04); }
+.nav-drop-item.accent { color: var(--orange); }
+.nav-drop-item.accent:hover { color: var(--orange-dark); }
+.nav-drop-divider { height: 1px; background: rgba(245,245,245,.07); margin: 6px 0; }
+.nav-drop-label {
+  display: block;
+  padding: 10px 20px 4px;
+  font-family: var(--font-display);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: rgba(245,245,245,.25);
+}
+
+/* ── MOBILE NAV ── */
+.nav-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;flex-shrink:0;}
+.nav-burger span{display:block;width:24px;height:2px;background:var(--white);transition:transform .3s,opacity .3s;}
+.nav-burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.nav-burger.open span:nth-child(2){opacity:0;}
+.nav-burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+@media(max-width:768px){
+  .nav-burger{display:flex;}
+  .nav-cta{display:none;}
+  .nav-links{
+    display:none;position:fixed;
+    top:calc(var(--ticker-h) + var(--nav-h));
+    left:0;right:0;bottom:0;
+    background:rgba(14,14,14,.98);backdrop-filter:blur(16px);
+    flex-direction:column;gap:0;
+    padding:8px 0 40px;
+    border-top:1px solid rgba(245,245,245,.08);
+    z-index:99;overflow-y:auto;
+  }
+  .nav-links.open{display:flex;}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:14px 32px;font-size:14px;color:rgba(245,245,245,.8);}
+  .nav-links a:hover{color:var(--white);background:rgba(255,255,255,.04);}
+  .nav-phone{display:none;}
+  .nav-dropdown>a::after{content:none;}
+  .nav-drop-menu{display:none!important;}
+  .nav-drop-item{padding:10px 32px 10px 48px;font-size:10px;color:rgba(245,245,245,.45);}
+  .nav-drop-label{padding:10px 32px 4px 48px;font-size:9px;}
+  .nav-drop-divider{margin:4px 32px;}
+}
+
+/* ── MOBILE LAYOUT ── */
+@media(max-width:768px){
+  .container{padding:0 20px;}
+  .nav-inner{padding:0 20px;}
+
+  /* Page headers */
+  .page-header{padding:calc(var(--ticker-h) + var(--nav-h) + 48px) 0 48px;}
+  .page-heading{font-size:clamp(38px,9vw,64px);}
+  .page-sub{font-size:15px;}
+
+  /* Sections */
+  .s-dark,.s-darker,.s-teal,.s-teal-dark,.s-light,.s-orange{padding:64px 0;}
+
+  /* Typography */
+  .section-heading{font-size:clamp(30px,8vw,48px);}
+  .prose{font-size:15px;}
+
+  /* Grids */
+  .two-col,.sidebar-left{grid-template-columns:1fr;gap:40px;}
+  .three-col,.four-col{grid-template-columns:1fr;}
+  .card-grid,.card-grid-2{grid-template-columns:1fr;}
+  .tier-grid{grid-template-columns:1fr;}
+  .pillar-grid{grid-template-columns:1fr 1fr;}
+  .work-grid{grid-template-columns:1fr;}
+  .insight-grid{grid-template-columns:1fr;}
+  .stat-bar{grid-template-columns:1fr 1fr;}
+  .footer-grid{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
+  .footer-values{flex-wrap:wrap;justify-content:center;gap:12px;}
+  .field-row{grid-template-columns:1fr;}
+
+  /* Steps */
+  .step{grid-template-columns:48px 1fr;gap:20px;}
+  .step-num{font-size:32px;}
+
+  /* Movement list */
+  .movement-item{grid-template-columns:40px 1fr;gap:20px;}
+  .mi-arrow{display:none;}
+  .mi-name{font-size:18px;}
+
+  /* Service rows */
+  .service-row{grid-template-columns:1fr;gap:12px;}
+
+  /* Work cards */
+  .work-card{padding:32px 24px;}
+
+  /* Form */
+  .form-card{padding:28px 20px;}
+
+  /* CTA band */
+  .cta-band{padding:56px 0;}
+  .cta-band-actions{flex-direction:column;align-items:center;}
+
+  /* Pullquote */
+  .pullquote-text{font-size:clamp(18px,5vw,26px);}
+
+  /* AI bar */
+  .ai-bar{flex-direction:column;gap:12px;align-items:flex-start;}
+
+  /* Hero homepage specific */
+  h1.hero-headline{font-size:clamp(44px,12vw,72px)!important;}
+  .hero-proof-bar{flex-direction:column;gap:12px;align-items:flex-start;}
+  .hero-badge-inline{font-size:11px;}
+
+  /* Stat bar */
+  .stat-num{font-size:40px;}
+
+  /* Page actions */
+  .page-actions{flex-direction:column;}
+  .page-actions a{text-align:center;}
+}
+
+@media(max-width:480px){
+  .pillar-grid{grid-template-columns:1fr;}
+  .stat-bar{grid-template-columns:1fr;}
+  .page-heading{font-size:clamp(34px,10vw,56px);}
+  h1.hero-headline{font-size:clamp(38px,12vw,60px)!important;}
+}
+
+/* ── MOBILE FIXES ── */
+@media(max-width:768px){
+  /* Force burger visible */
+  button.nav-burger{
+    display:flex!important;
+    flex-direction:column;
+    justify-content:center;
+    gap:5px;
+    cursor:pointer;
+    padding:10px 8px;
+    background:none;
+    border:none;
+    min-width:44px;
+    min-height:44px;
+    z-index:200;
+  }
+  button.nav-burger span{
+    display:block!important;
+    width:24px;
+    height:2px;
+    background:#fff;
+    border-radius:2px;
+    transition:transform .3s,opacity .3s;
+  }
+  /* Nav always has bg on mobile so burger is visible */
+  nav{background:rgba(20,20,20,.97)!important;backdrop-filter:blur(16px);}
+
+  /* Tighter page header, reduce the dead space */
+  .page-header{
+    padding:calc(var(--ticker-h) + var(--nav-h) + 24px) 0 40px!important;
+  }
+}
+</style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<style>@media(max-width:768px){
+.nav-burger{display:flex;}
+.nav-cta{display:none;}
+.nav-phone{display:none;}
+.nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;padding-top:120px;background:rgba(14,14,14,.98);flex-direction:column;z-index:9999;overflow-y:auto;}
+.nav-links.open{display:flex;}
+.nav-links li{width:100%;}
+.nav-links>li>a{display:block;padding:16px 32px;font-size:15px;}
+.nav-drop-menu{display:none;}
+.nav-dropdown>a::after{content:none;}
+}</style><!-- MOBILENAV2 --><link rel="canonical" href="https://lovelandbranddesign.com/google-ad-grants-for-nonprofits"><meta property="og:type" content="website"><meta property="og:site_name" content="Loveland Brand Design"><meta property="og:locale" content="en_US"><meta property="og:title" content="Google Ad Grants for Nonprofits | Loveland Brand Design"><meta property="og:description" content="Eligible nonprofits can receive up to $10,000 a month in Google Search ads. Loveland Brand Design applies, sets up and manages your account."><meta property="og:url" content="https://lovelandbranddesign.com/google-ad-grants-for-nonprofits"><meta property="og:image" content="https://lovelandbranddesign.com/assets/images/og/google_ad_grants_for_nonprofits.png"><meta property="og:image:width" content="1731"><meta property="og:image:height" content="909"><meta property="og:image:alt" content="Google Ad Grants for nonprofits, applied for, set up and managed by Loveland Brand Design."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Google Ad Grants for Nonprofits | Loveland Brand Design"><meta name="twitter:description" content="Eligible nonprofits can receive up to $10,000 a month in Google Search ads. Loveland Brand Design applies, sets up and manages your account."><meta name="twitter:image" content="https://lovelandbranddesign.com/assets/images/og/google_ad_grants_for_nonprofits.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":["Organization","ProfessionalService"],"@id":"https://lovelandbranddesign.com/#organization","name":"Loveland Brand Design LLC","alternateName":"LBD","url":"https://lovelandbranddesign.com/","logo":"https://lovelandbranddesign.com/assets/images/lbd-link-preview.png","image":"https://lovelandbranddesign.com/assets/images/lbd-link-preview.png","description":"AI-powered marketing systems for businesses doing work worth defending. Fixed scope, fixed fee, no hourly billing.","email":"info@lovelandbranddesign.com","telephone":"+1-617-686-5618","founder":{"@type":"Person","name":"Aaron Loveland","sameAs":["https://www.linkedin.com/in/aaronloveland/"]},"address":{"@type":"PostalAddress","streetAddress":"113 6th Street","addressLocality":"Pikeville","addressRegion":"KY","postalCode":"41501","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":37.4793,"longitude":-82.5188},"areaServed":[{"@type":"State","name":"Kentucky"},{"@type":"Country","name":"United States"}],"sameAs":["https://www.linkedin.com/in/aaronloveland/"],"priceRange":"$$"}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Google Ad Grants Management for Nonprofits","description":"Eligible nonprofits can receive up to $10,000 a month in Google Search ads. Loveland Brand Design applies, sets up and manages your account.","url":"https://lovelandbranddesign.com/google-ad-grants-for-nonprofits","provider":{"@id":"https://lovelandbranddesign.com/#organization"},"areaServed":{"@type":"Country","name":"United States"},"serviceType":"Google Ad Grants application, setup and management","audience":{"@type":"Audience","audienceType":"Eligible 501(c)(3) nonprofit organizations"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Google Ad Grants?","acceptedAnswer":{"@type":"Answer","text":"Google Ad Grants gives eligible nonprofits up to $10,000 a month in Search advertising on Google.com. Your ads appear when someone searches for what your organization does. Google sets the monthly budget at $10,000, which equals $329 a day, and treats it as a limit. Actual spend depends on keywords, bids, ad quality and search demand."}},{"@type":"Question","name":"Does our nonprofit qualify?","acceptedAnswer":{"@type":"Answer","text":"A US organization qualifies when the IRS recognizes it under Section 501(c)(3), or when it holds group exempt status through a central 501(c)(3), and when Google's partner Goodstack verifies it as a nonprofit. Governmental entities, hospitals and health care organizations, and schools, academic institutions and universities are not eligible. Charitable arms of healthcare organizations and philanthropic arms of educational organizations can qualify. Fiscally sponsored organizations without their own 501(c)(3) are not eligible today. Google decides every application, and we check your fit in the first conversation."}},{"@type":"Question","name":"Does the grant cost anything?","acceptedAnswer":{"@type":"Answer","text":"Google funds the ad spend through the grant. Loveland Brand Design prices its management as fixed scope and fixed fee, with no hourly billing, and we state the fee before you sign anything."}},{"@type":"Question","name":"What does Loveland Brand Design do for Ad Grants?","acceptedAnswer":{"@type":"Answer","text":"We apply, set up and manage. We prepare the Google for Nonprofits verification and the Ad Grants activation request and walk your administrator through each step Google requires. We set up conversion tracking, the account structure, keywords, ads and location targeting. Each month we review click-through rate and conversions, clean up keywords, test ads, complete the annual program survey and send a report."}},{"@type":"Question","name":"Why does the account need monthly management?","acceptedAnswer":{"@type":"Answer","text":"The grant carries rules that apply every month. Google requires a 5% click-through rate each month, at least one tracked conversion each month, at least two ad groups per campaign, at least two sitelinks, specific location targeting and conversion-based Smart Bidding. Keywords with a Quality Score of 1 or 2 must be paused or removed, and the account must complete Google's annual program survey."}},{"@type":"Question","name":"How long until ads run?","acceptedAnswer":{"@type":"Answer","text":"Google states that most Goodstack verification requests are reviewed within 3 to 5 business days and that the Ad Grants activation review may take several business days. After approval, Google sends an invitation email that can take up to 3 business days to arrive. Google controls both reviews, so we give you the steps and the order, and we report each Google decision as it arrives."}},{"@type":"Question","name":"What happens if the account falls out of compliance?","acceptedAnswer":{"@type":"Answer","text":"Google states that two consecutive months below the 5% click-through rate lead to temporary deactivation until the account is corrected and reinstated. Google also states that any account in violation of program policies is subject to automatic suspension without notification. We review the account every month so drift gets fixed early."}},{"@type":"Question","name":"Does our website need to change?","acceptedAnswer":{"@type":"Answer","text":"Google reviews the website before it approves activation. Your organization must own the domain, the site must use HTTPS across every page, and the submitted domain cannot redirect elsewhere. The site needs a clear mission, substantial and unique content, working navigation, fast and mobile friendly pages, and working donation links, with no AdSense. When the site falls short, we build or repair it through our Digital Ecosystem work before the account launches."}}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://lovelandbranddesign.com/"},{"@type":"ListItem","position":2,"name":"Resources","item":"https://lovelandbranddesign.com/insights"},{"@type":"ListItem","position":3,"name":"Google Ad Grants for Nonprofits","item":"https://lovelandbranddesign.com/google-ad-grants-for-nonprofits"}]}</script><style>
+.gag-rules{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(245,245,245,.06);margin-top:48px;}
+.gag-rule{background:var(--charcoal-dk);padding:32px 28px;display:flex;gap:20px;align-items:flex-start;}
+.gag-rule-num{font-family:var(--font-display);font-size:40px;font-weight:900;line-height:1;color:var(--orange);min-width:64px;}
+.gag-rule-name{font-family:var(--font-display);font-size:15px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--beige);margin-bottom:8px;}
+.gag-rule p{font-size:14px;line-height:1.7;color:rgba(245,245,245,.6);}
+.gag-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:48px;}
+.gag-col{background:var(--charcoal);padding:40px 32px;}
+.gag-col-num{font-family:var(--font-display);font-size:40px;font-weight:900;line-height:1;color:var(--orange);margin-bottom:16px;}
+.gag-col-name{font-family:var(--font-display);font-size:24px;font-weight:900;letter-spacing:.02em;text-transform:uppercase;color:var(--beige);margin-bottom:14px;}
+.gag-col p{font-size:15px;line-height:1.75;color:rgba(245,245,245,.65);}
+.gag-panel{background:rgba(245,245,245,.05);border:1px solid rgba(245,245,245,.1);padding:32px;}
+.gag-panel-label{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);}
+.gag-panel p{font-size:14px;line-height:1.7;color:rgba(245,245,245,.65);margin-top:20px;}
+.gag-fit{font-size:15px;line-height:1.7;color:rgba(245,245,245,.8);margin-top:24px;}
+.gag-steps{margin-top:40px;}
+.feature-list li.dark.t::before{color:var(--teal-light);}
+@media(max-width:900px){.gag-rules,.gag-cols{grid-template-columns:1fr;}.gag-rule{padding:24px 20px;}}
+</style><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" type="image/svg+xml" href="/assets/favicon/lbd-mark-black.svg"><link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png"><link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png"><link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#2E2E2E"></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9TJVTCR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+<span class="ticker-item">Custom Strategy</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Fixed Scope</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">No Hourly Billing</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">AI-Integrated Growth</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Systems That Give You Your Bandwidth Back</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Business Owners Should Not Have to Become Marketers</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Custom Strategy</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Fixed Scope</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">No Hourly Billing</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">AI-Integrated Growth</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Systems That Give You Your Bandwidth Back</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+<span class="ticker-item">Business Owners Should Not Have to Become Marketers</span><span class="ticker-sep">&nbsp;·&nbsp;</span>
+</div></div>
+<nav id="mainNav"><div class="nav-inner">
+  <a href="/" class="nav-logo-svg">
+    <span class="nav-logo-wordmark">LOVELAND<span class="nav-logo-dot">.</span></span>
+    <span class="nav-logo-sub">Brand Design</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="/about">About</a></li>
+    <li><a href="/work">Our Work</a></li>
+    <li class="nav-dropdown">
+      <a href="/solutions">Solutions</a>
+      <div class="nav-drop-menu">
+        <span class="nav-drop-label">Seven Movements</span>
+        <a href="/solutions/marketing-action-plan" class="nav-drop-item">Marketing Action Plan</a>
+        <a href="/solutions/brand-architecture" class="nav-drop-item">Brand Architecture</a>
+        <a href="/solutions/digital-ecosystem" class="nav-drop-item">Digital Ecosystem</a>
+        <a href="/solutions/marketing-operations" class="nav-drop-item">Marketing Operations</a>
+        <a href="/solutions/content-and-social" class="nav-drop-item">Content and Social</a>
+        <a href="/solutions/prospecting-and-pipeline" class="nav-drop-item">Prospecting and Pipeline</a>
+        <a href="/solutions/digital-advertising" class="nav-drop-item">Digital Advertising</a>
+        <div class="nav-drop-divider"></div>
+        <a href="/solutions" class="nav-drop-item accent">View All Solutions →</a>
+      </div>
+    </li>
+    <li class="nav-dropdown">
+      <a href="/insights" class="active">Resources</a>
+      <div class="nav-drop-menu">
+        <a href="/insights" class="nav-drop-item">Insights</a>
+        <a href="/faqs" class="nav-drop-item">FAQs</a>
+        <a href="/15-pillars-of-digital-marketing-health" class="nav-drop-item">15 Pillars</a>
+        <a href="/google-ad-grants-for-nonprofits" class="nav-drop-item">Google Ad Grants</a>
+        <div class="nav-drop-divider"></div>
+        <a href="/eky" class="nav-drop-item">Eastern Kentucky</a>
+      </div>
+    </li>
+    <li><a href="/approach">Approach</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <li><a class="nav-phone" href="tel:6176865618">617.686.5618</a></li>
+  </ul>
+  <button class="nav-burger" id="navBurger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <a href="/contact" class="nav-cta">Start My MAP</a>
+</div></nav>
+<section class="page-header">
+  <div class="container">
+    <div class="eyebrow ew-orange reveal">Resources / Google Ad Grants</div>
+    <h1 class="page-heading reveal">Google Ad Grants<br>for nonprofits,<br><span class='ao'>applied for, set up and managed.</span></h1>
+    <p class="page-sub reveal">Eligible nonprofits can receive up to $10,000 a month in Google Search advertising. Loveland Brand Design handles the application, the setup and the monthly work that keeps the grant active.</p>
+    <div class="page-actions reveal">
+      <a href="/contact" class="btn-primary" data-gag-cta="hero">Start a twenty-minute conversation</a>
+      <a href="#how-it-works" class="btn-ghost">See how it works</a>
+    </div>
+  </div>
+</section>
+
+<section class="s-light" id="what-it-is">
+  <div class="container">
+    <div class="two-col center">
+      <div class="reveal">
+        <div class="eyebrow ew-orange">The Program</div>
+        <h2 class="section-heading dark">A grant<br><span class='ao'>of Search ads.</span></h2>
+        <div class="prose dark"><p>Google Ad Grants gives eligible nonprofits up to $10,000 a month in Search advertising on Google.com. Your ad appears when someone searches for what your organization does. That puts your mission in front of donors, volunteers and the people you serve at the moment they look.</p><p>The $10,000 is a monthly ceiling. Actual spend depends on your keywords, bids, ad quality and how many people search.</p></div>
+      </div>
+      <div class="reveal">
+        <div class="eyebrow ew-teal">What the Grant Covers</div>
+        <ul class="feature-list"><li class="t dark">Search ads shown on Google.com</li><li class="t dark">A monthly budget of up to $10,000 USD, which Google sets at $329 a day</li><li class="t dark">An account run on the standard Google Ads platform</li><li class="t dark">Additional Google Ads available through a separate account</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s-teal" id="who-qualifies">
+  <div class="container">
+    <div class="two-col reveal">
+      <div>
+        <div class="eyebrow ew-gold">Who Qualifies</div>
+        <h2 class="section-heading">Check your<br><span class='ag'>fit in<br>one minute.</span></h2>
+        <ul class="feature-list"><li class="g">A US organization recognized by the IRS under Section 501(c)(3), or a group exempt organization affiliated with a central 501(c)(3)</li><li class="g">Verified as a nonprofit through Google for Nonprofits and its validation partner Goodstack</li><li class="g">A website on a domain your organization owns, served over HTTPS</li><li class="g">A clear mission and original content on that website</li><li class="g">An organization operated exclusively for charitable purposes</li></ul>
+      </div>
+      <div style="padding-top:8px;">
+        <div class="gag-panel">
+          <div class="gag-panel-label">Google lists these as ineligible</div>
+          <ul class="feature-list" style="margin-top:16px;"><li>Governmental entities and organizations</li><li>Hospitals and health care organizations</li><li>Schools, academic institutions and universities</li></ul>
+          <p>Charitable arms and foundations of healthcare organizations are eligible. So are philanthropic arms of educational organizations. Fiscally sponsored organizations without their own 501(c)(3) are not eligible today.</p>
+        </div>
+        <p class="gag-fit">If your organization does not qualify, we tell you in the first conversation. Google decides every application.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s-darker" id="monthly-work">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow ew-orange">Monthly Rules</div>
+      <h2 class="section-heading">The grant funds the ads.<br><span class='ao'>Keeping it active<br>takes monthly work.</span></h2>
+      <div class="prose"><p>Google attaches performance and structure rules to every Ad Grants account. These are the rules that apply each month, taken from Google's own policy pages.</p></div>
+    </div>
+    <div class="gag-rules reveal"><div class="gag-rule"><div class="gag-rule-num">5%</div><div><div class="gag-rule-name">Click-through rate</div><p>Google requires a 5% click-through rate each month, measured across the account. Two consecutive months below 5% lead to temporary deactivation.</p></div></div><div class="gag-rule"><div class="gag-rule-num">1+</div><div><div class="gag-rule-name">Tracked conversion</div><p>At least one meaningful conversion each month. Donations, volunteer sign-ups, email sign-ups, information requests and calls count.</p></div></div><div class="gag-rule"><div class="gag-rule-num">2+</div><div><div class="gag-rule-name">Ad groups and sitelinks</div><p>At least two ad groups in every campaign, at least two sitelinks and specific location targeting.</p></div></div><div class="gag-rule"><div class="gag-rule-num">Q3</div><div><div class="gag-rule-name">Keyword quality</div><p>Keywords with a Quality Score of 1 or 2 are paused or removed. Single-word keywords and overly generic keywords need Google&#x27;s exceptions or removal.</p></div></div><div class="gag-rule"><div class="gag-rule-num">SB</div><div><div class="gag-rule-name">Smart Bidding</div><p>Accounts created on or after April 22, 2019 use conversion-based Smart Bidding, unless they run Smart campaigns.</p></div></div><div class="gag-rule"><div class="gag-rule-num">1x</div><div><div class="gag-rule-name">Annual survey</div><p>Every grantee completes Google&#x27;s annual program survey.</p></div></div></div>
+    <div class="prose reveal" style="margin-top:40px;"><p>Google states that any account found in violation of program policies is subject to automatic suspension without notification. We review your account every month and fix drift early.</p></div>
+  </div>
+</section>
+
+<section class="s-light" id="scope">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow ew-orange">The Service</div>
+      <h2 class="section-heading dark">Apply.<br><span class='at'>Set up.</span><br><span class='ao'>Manage.</span></h2>
+    </div>
+    <div class="gag-cols reveal">
+      <div class="gag-col">
+        <div class="gag-col-num">01</div>
+        <div class="gag-col-name">Apply</div>
+        <p>We prepare the Google for Nonprofits verification and the Ad Grants activation request. We walk your administrator through each step Google requires, and we track each review until Google decides.</p>
+      </div>
+      <div class="gag-col">
+        <div class="gag-col-num">02</div>
+        <div class="gag-col-name">Set up</div>
+        <p>We set up conversion tracking in GA4 and Google Ads, a compliant account structure, keyword research, responsive search ads, sitelinks, location targeting and Smart Bidding.</p>
+      </div>
+      <div class="gag-col">
+        <div class="gag-col-num">03</div>
+        <div class="gag-col-name">Manage</div>
+        <p>Each month we review click-through rate and conversions, clean up keywords, test ads and complete the annual program survey. You receive a monthly report in plain language.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s-teal" id="how-it-works">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow ew-gold">How It Starts</div>
+      <h2 class="section-heading">Three steps<br><span class='ag'>from conversation<br>to live ads.</span></h2>
+    </div>
+    <div class="step-list gag-steps reveal">
+      <div class="step"><div class="step-num">01</div><div><div class="step-name">Apply for Google for Nonprofits</div><div class="step-desc">Goodstack verifies your legal registration. Google states that most verification requests are reviewed within 3 to 5 business days.</div></div></div>
+      <div class="step"><div class="step-num">02</div><div><div class="step-name">Activate Ad Grants</div><div class="step-desc">Google reviews your website against its Ad Grants website policy. Google states the activation review may take several business days. Approval brings an invitation email to your Ad Grants account.</div></div></div>
+      <div class="step"><div class="step-num">03</div><div><div class="step-name">Launch</div><div class="step-desc">We launch campaigns on a compliant structure with conversion tracking in place. Google does not review a new account against the 5% click-through rate requirement until the account is 90 days old.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="s-darker" id="website">
+  <div class="container">
+    <div class="two-col reveal">
+      <div>
+        <div class="eyebrow ew-orange">Your Website</div>
+        <h2 class="section-heading">Your website<br><span class='ao'>has to pass first.</span></h2>
+        <div class="prose"><p>Ad Grants requires a compliant website and tracked conversions. We build or repair both before the account launches, through our <a href="/solutions/digital-ecosystem" style="color:var(--teal-light);">Digital Ecosystem</a> work.</p><p>This follows the order we use for every paid media engagement. Foundations come first, and then the spend.</p></div>
+      </div>
+      <div>
+        <div class="eyebrow ew-teal">What Google Checks</div>
+        <ul class="feature-list"><li class="t">Your organization owns the domain, and the domain does not redirect elsewhere</li><li class="t">HTTPS on every page, with no mixed content</li><li class="t">Substantial, unique content and a clear mission</li><li class="t">Easy navigation, fast loading and mobile friendly pages</li><li class="t">Working donation links on a secure page</li><li class="t">No AdSense and no excessive third party ads</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s-light" id="fee">
+  <div class="container">
+    <div class="two-col center reveal">
+      <div>
+        <div class="eyebrow ew-orange">The Fee</div>
+        <h2 class="section-heading dark">Fixed scope.<br><span class='at'>Fixed fee.</span></h2>
+      </div>
+      <div class="prose dark"><p>We price Ad Grants management as fixed scope and fixed fee, with no hourly billing. We tell you exactly what you are getting, and what it costs, before you sign anything.</p><p>AI runs through the work and is included in the fixed fee.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="s-dark" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow ew-orange">Questions</div>
+      <h2 class="section-heading">Straight answers<br><span class='ao'>about Ad Grants.</span></h2>
+    </div>
+    <div class="faq-list reveal" style="max-width:860px;margin-top:32px;"><div class="faq-item"><div class="faq-q">What is Google Ad Grants?</div><div class="faq-a"><p>Google Ad Grants gives eligible nonprofits up to $10,000 a month in Search advertising on Google.com. Your ads appear when someone searches for what your organization does. Google sets the monthly budget at $10,000, which equals $329 a day, and treats it as a limit. Actual spend depends on keywords, bids, ad quality and search demand.</p></div></div><div class="faq-item"><div class="faq-q">Does our nonprofit qualify?</div><div class="faq-a"><p>A US organization qualifies when the IRS recognizes it under Section 501(c)(3), or when it holds group exempt status through a central 501(c)(3), and when Google&#x27;s partner Goodstack verifies it as a nonprofit. Governmental entities, hospitals and health care organizations, and schools, academic institutions and universities are not eligible. Charitable arms of healthcare organizations and philanthropic arms of educational organizations can qualify. Fiscally sponsored organizations without their own 501(c)(3) are not eligible today. Google decides every application, and we check your fit in the first conversation.</p></div></div><div class="faq-item"><div class="faq-q">Does the grant cost anything?</div><div class="faq-a"><p>Google funds the ad spend through the grant. Loveland Brand Design prices its management as fixed scope and fixed fee, with no hourly billing, and we state the fee before you sign anything.</p></div></div><div class="faq-item"><div class="faq-q">What does Loveland Brand Design do for Ad Grants?</div><div class="faq-a"><p>We apply, set up and manage. We prepare the Google for Nonprofits verification and the Ad Grants activation request and walk your administrator through each step Google requires. We set up conversion tracking, the account structure, keywords, ads and location targeting. Each month we review click-through rate and conversions, clean up keywords, test ads, complete the annual program survey and send a report.</p></div></div><div class="faq-item"><div class="faq-q">Why does the account need monthly management?</div><div class="faq-a"><p>The grant carries rules that apply every month. Google requires a 5% click-through rate each month, at least one tracked conversion each month, at least two ad groups per campaign, at least two sitelinks, specific location targeting and conversion-based Smart Bidding. Keywords with a Quality Score of 1 or 2 must be paused or removed, and the account must complete Google&#x27;s annual program survey.</p></div></div><div class="faq-item"><div class="faq-q">How long until ads run?</div><div class="faq-a"><p>Google states that most Goodstack verification requests are reviewed within 3 to 5 business days and that the Ad Grants activation review may take several business days. After approval, Google sends an invitation email that can take up to 3 business days to arrive. Google controls both reviews, so we give you the steps and the order, and we report each Google decision as it arrives.</p></div></div><div class="faq-item"><div class="faq-q">What happens if the account falls out of compliance?</div><div class="faq-a"><p>Google states that two consecutive months below the 5% click-through rate lead to temporary deactivation until the account is corrected and reinstated. Google also states that any account in violation of program policies is subject to automatic suspension without notification. We review the account every month so drift gets fixed early.</p></div></div><div class="faq-item"><div class="faq-q">Does our website need to change?</div><div class="faq-a"><p>Google reviews the website before it approves activation. Your organization must own the domain, the site must use HTTPS across every page, and the submitted domain cannot redirect elsewhere. The site needs a clear mission, substantial and unique content, working navigation, fast and mobile friendly pages, and working donation links, with no AdSense. When the site falls short, we build or repair it through our Digital Ecosystem work before the account launches.</p></div></div></div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <div class="container">
+    <h2 class="cta-band-heading">Start a twenty-minute conversation</h2>
+    <p class="cta-band-sub">Fixed scope. Fixed fee. We will tell you exactly what you are getting before you sign anything.</p>
+    <div class="cta-band-actions">
+      <a href="/contact" class="btn-white" data-gag-cta="closing">Start a twenty-minute conversation</a>
+      <a href="/approach" class="btn-ghost" style="border-color:rgba(255,255,255,.35);color:var(--white);">How We Work</a>
+    </div>
+  </div>
+</div>
+
+<footer><div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo-svg">
+        <span class="footer-logo-wordmark">LOVELAND<span class="footer-logo-dot">.</span></span>
+        <span class="footer-logo-sub">Brand Design</span>
+      </div>
+      <p class="footer-tagline">AI-powered marketing systems for businesses doing work worth defending.</p>
+      <div class="footer-contact">
+        <a href="tel:6176865618">617.686.5618</a>
+        <a href="mailto:info@lovelandbranddesign.com">info@lovelandbranddesign.com</a>
+        <a href="/eky">Pikeville, Kentucky</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Solutions</div>
+      <ul>
+        <li><a href="/solutions/marketing-action-plan">Marketing Action Plan</a></li>
+        <li><a href="/solutions/brand-architecture">Brand Architecture</a></li>
+        <li><a href="/solutions/digital-ecosystem">Digital Ecosystem</a></li>
+        <li><a href="/solutions/marketing-operations">Marketing Operations</a></li>
+        <li><a href="/solutions/content-and-social">Content and Social</a></li>
+        <li><a href="/solutions/prospecting-and-pipeline">Prospecting & Pipeline</a></li>
+        <li><a href="/solutions/digital-advertising">Digital Advertising</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Company</div>
+      <ul>
+        <li><a href="/about">About</a></li>
+        <li><a href="/approach">Approach</a></li>
+        <li><a href="/work">Our Work</a></li>
+        <li><a href="/faqs">FAQs</a></li>
+        <li><a href="/insights">Insights</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">Start Here</div>
+      <ul>
+        <li><a href="/contact">Start My MAP</a></li>
+        <li><a href="mailto:info@lovelandbranddesign.com">Send an Email</a></li>
+        <li><a href="tel:6176865618">Call Us</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Service</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Loveland Brand Design LLC. Pikeville, Kentucky.</div>
+    <ul class="footer-values"><li>Simplicity</li><li>Systems</li><li>Fit</li><li>Freedom</li><li>Honesty</li></ul>
+  </div>
+</div></footer>
+
+<script>
+if(window.netlifyIdentity){window.netlifyIdentity.on("init",u=>{if(!u){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});}});}
+</script>
+<script>
+(function(){
+var nav=document.getElementById('mainNav');
+if(nav){window.addEventListener('scroll',function(){nav.classList.toggle('scrolled',window.scrollY>80);},{passive:true});}
+var els=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');io.unobserve(x.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+els.forEach(function(el){io.observe(el);});
+}else{els.forEach(function(el){el.classList.add('visible');});}
+document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){q.parentElement.classList.toggle('open');});});
+var b=document.getElementById('navBurger'),n=document.querySelector('.nav-links');
+if(b&&n){
+b.addEventListener('click',function(){b.classList.toggle('open');n.classList.toggle('open');});
+n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){b.classList.remove('open');n.classList.remove('open');});});
+}
+})();
+</script>
+<script>
+document.querySelectorAll('[data-gag-cta]').forEach(function(a){a.addEventListener('click',function(){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'ad_grants_conversation_click',cta_location:a.getAttribute('data-gag-cta'),page_path:'/google-ad-grants-for-nonprofits'});});});
+</script></body>
+</html>
